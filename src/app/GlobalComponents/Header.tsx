@@ -86,7 +86,7 @@ export default function Header() {
 
         {/* Nav bar mobile */}
         {mobileMenu && (
-          <div className={`-ml-4 sm:-ml-[2rem] md:-ml-[4rem] lg:-ml-[6rem] absolute z-20 page top-[5rem] rounded-lg bg-primary border-b border-b-blueBranding shadow-2xl w-full flex flex-col justify-center origin-top ${mobileMenu === true ? 'animate-open-menu': 'animate-close-menu'} `}>
+          <div className={`bg-white -ml-4 sm:-ml-[2rem] md:-ml-[4rem] lg:-ml-[6rem] absolute z-50 page top-[5rem] rounded-lg bg-primary border-b border-b-blueBranding shadow-2xl w-full flex flex-col justify-center origin-top ${mobileMenu === true ? 'animate-open-menu': 'animate-close-menu'} `}>
             <nav className='py-[2rem] text-blueBranding'>
               <ul className='font-bold mb-8 text-[1.2rem] flex flex-col gap-[0.5rem]'>
                 <li>HOME</li>

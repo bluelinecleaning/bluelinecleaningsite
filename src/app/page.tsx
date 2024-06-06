@@ -1,9 +1,10 @@
-import Image from "next/image";
+// Components
+import Intro from "./(home)/Intro";
 
 export default function Home() {
   return (
-    <main className="min-h-screen flex flex-col items-center fira ">
-      {/* Hello Blueline, this is our Home page */}
-    </main>
+    <div className="fira pt-[10rem] min-h-screen flex flex-col items-center  ">
+      <Intro />
+    </div>
   );
 }
