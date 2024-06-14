@@ -6,7 +6,7 @@ import React, { useState } from 'react'
 // Components
 
 // Assets
-import Logo from '../../../assets/Blueline+Logo_Laundry.png'
+import Logo from '../../../assets/logo2.png'
 import Link from 'next/link'
 import Image from 'next/image'
 
@@ -31,7 +31,7 @@ export default function Header() {
 
 
   return (
-    <header className={`fixed z-50 w-full rounded-lg ${mobileMenu === false ? 'shadow-2xl border-b border-blueBranding': ''}`}>
+    <header className={`fixed z-50 opacity-95 bg-white w-full rounded-b-lg ${mobileMenu === false ? 'shadow-2xl border-b border-blueBranding': ''}`}>
       <div className='fira page py-[1rem] lg:py-[2rem] flex items-center xl:justify-between'>
         <Link href='/'>
           <Image 
@@ -70,10 +70,9 @@ export default function Header() {
           <nav className='flex  gap-[4rem]'>
             <ul className="flex justify-between items-center gap-[1rem] text-blueBranding font-bold text-[1rem] hover:cursor-pointer">
               <li className='hover:scale-105'>HOME</li>
-              <li className='hover:scale-105'>OUR PURPOSE</li>
               <li className='hover:scale-105'>OUR CLEANING SERVICES</li>
               <li className='hover:scale-105'>OUR PEOPLE</li>
-              <li className='hover:scale-105'>OUR CUSTOMERS</li>  
+              <li className='hover:scale-105'>CONTACT</li>  
             </ul>
             <a href='tel:+61428994431' className=' flex items-center gap-2 bg-blueBranding text-white py-2 px-4 rounded w-min ml-auto hover:bg-white hover:text-blueBranding hover:font-bold ease-in-out duration-300  '>
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
@@ -90,12 +89,9 @@ export default function Header() {
             <nav className='py-[2rem] text-blueBranding'>
               <ul className='font-bold mb-8 text-[1.2rem] flex flex-col gap-[0.5rem]'>
                 <li>HOME</li>
-                <li>OUR PURPOSE</li>
                 <li>OUR CLEANING SERVICES</li>
                 <li>OUR PEOPLE</li>
-                <li>OUR CUSTOMERS</li>
-                <li>CONTACT US</li>
-                <li>GET A QUOTE</li>
+                <li>CONTACT</li>
               </ul>
               <a href='tel:+61428994431' className=' mx-auto flex items-center gap-2 bg-blueBranding text-white py-2 px-4 rounded w-min'>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">

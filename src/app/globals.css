@@ -14,3 +14,4 @@ html {
 .page {
   @apply px-[1rem] py-[1rem] sm:mx-auto sm:px-[2rem] md:px-[4rem]
 }
+  
