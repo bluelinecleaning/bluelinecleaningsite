@@ -2,13 +2,11 @@
 
 // Dependencies
 import React, { useState } from 'react'
-
-// Components
-
-// Assets
-import Logo from '../../../assets/logo2.png'
 import Link from 'next/link'
 import Image from 'next/image'
+
+// Assets
+import Logo from '../../../assets/blue-logo.png'
 
 
 export default function Header() {
@@ -35,7 +33,7 @@ export default function Header() {
       <div className='fira page py-[1rem] lg:py-[2rem] flex items-center xl:justify-between'>
         <Link href='/'>
           <Image 
-            className='w-[11rem] h-[4.563rem]'
+            className='w-[3rem]'
             src={Logo}
             alt='Blueline Logo'
             title='Blueline Logo'
@@ -69,7 +67,7 @@ export default function Header() {
         <div className='hidden xl:flex'>
           <nav className='flex  gap-[4rem]'>
             <ul className="flex justify-between items-center gap-[1rem] text-blueBranding font-bold text-[1rem] hover:cursor-pointer">
-              <li className='hover:scale-105'>HOME</li>
+              <li className='hover:scale-105'><Link href={'/'}>HOME</Link></li>
               <li className='hover:scale-105'>OUR CLEANING SERVICES</li>
               <li className='hover:scale-105'>OUR PEOPLE</li>
               <li className='hover:scale-105'>CONTACT</li>  
@@ -88,10 +86,10 @@ export default function Header() {
           <div className={`bg-white -ml-4 sm:-ml-[2rem] md:-ml-[4rem] lg:-ml-[6rem] absolute z-50 page top-[5rem] rounded-lg bg-primary border-b border-b-blueBranding shadow-2xl w-full flex flex-col justify-center origin-top ${mobileMenu === true ? 'animate-open-menu': 'animate-close-menu'} `}>
             <nav className='py-[2rem] text-blueBranding'>
               <ul className='font-bold mb-8 text-[1.2rem] flex flex-col gap-[0.5rem]'>
-                <li>HOME</li>
-                <li>OUR CLEANING SERVICES</li>
-                <li>OUR PEOPLE</li>
-                <li>CONTACT</li>
+                <li onClick={() => toggleMenu()}><Link href={'/'}>HOME</Link></li>
+                <li onClick={() => toggleMenu()}><Link href={'/#what'}>OUR CLEANING SERVICES</Link></li>
+                <li onClick={() => toggleMenu()}><Link href={'/#impact'}>OUR PEOPLE</Link></li>
+                <li onClick={() => toggleMenu()}>CONTACT</li>
               </ul>
               <a href='tel:+61428994431' className=' mx-auto flex items-center gap-2 bg-blueBranding text-white py-2 px-4 rounded w-min'>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
