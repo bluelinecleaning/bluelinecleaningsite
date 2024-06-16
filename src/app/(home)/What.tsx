@@ -22,7 +22,7 @@ export default function What() {
                 {ServicesArray.map((service => (
                    <div 
                         key={service.id}
-                        className='h-[20rem] bg-white relative max-w-xs overflow-hidden rounded-2xl shadow-2xl group'
+                        className='h-[20rem] mx-auto bg-white relative max-w-xs overflow-hidden rounded-2xl shadow-2xl group'
                     >
                         <Image 
                             src={service.image}

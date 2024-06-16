@@ -24,6 +24,8 @@ export default function ServiceExplanation({ service }:any) {
             <Image 
               src={Hero}
               className='h-full w-full object-cover'
+              title='Blueline picture'
+              alt='Blueline picture'
             />
           </div>
           {/* Screen */}
