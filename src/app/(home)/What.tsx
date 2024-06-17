@@ -22,7 +22,7 @@ export default function What() {
                 {ServicesArray.map((service => (
                    <div 
                         key={service.id}
-                        className='h-[20rem] mx-auto bg-white relative max-w-xs overflow-hidden rounded-2xl shadow-2xl group'
+                        className='h-[20rem] mx-auto bg-white relative max-w-xs overflow-hidden rounded-2xl border border-gray-300 shadow-lg shadow-white group'
                     >
                         <Image 
                             src={service.image}
@@ -30,7 +30,7 @@ export default function What() {
                             className="h-[18rem] object-cover transition-transform group-hover:scale-125 duration-500"
                         />
                         <h3 className='py-1 font-bold text-center text-blueBranding'>{service.title}</h3>
-                        <div className="absolute inset-0 flex items-end bg-gradient-to-b from-black/80 via-black/20 to-black/80 transition-transform transform translate-y-full group-hover:translate-y-0 duration-500">
+                        <div className="absolute inset-0 flex items-end bg-gradient-to-b from-black/80 via-blueBranding/80 to-black/80 transition-transform transform translate-y-full group-hover:translate-y-0 duration-500">
                             <div className="p-4 text-white flex flex-col">
                                 <h3 className='font-bold text-[1.3rem]'>{service.title}</h3>
                                 <p className=''>{service.short}</p>
