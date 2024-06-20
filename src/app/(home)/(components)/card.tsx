@@ -11,11 +11,11 @@ import Damian from '../../../../assets/damian.png'
 import Andrew from '../../../../assets/Andrew.png'
 import Ndis from '../../../../assets/ndis.svg'
 import Integrity from '../../../../assets/integrity.png'
-import Charity from '../../../../assets/charity.png'
 import Iso from '../../../../assets/high-quality.png'
 import Safe from '../../../../assets/safe.png'
 import People from '../../../../assets/people.png'
 import Care from '../../../../assets/care.png'
+import Logo from '../../../../assets/new_logo.png'
 
 
 type FeatureCardProps = {
@@ -32,7 +32,7 @@ function FeatureCard({ gradient, children, id }: FeatureCardProps) {
     const inViewFeature = useFeatureStore((state) => state.inViewFeature)
   
     return (
-    <div className={classNames("absolute inset-0 h-full w-full py-2 rounded-2xl bg-gradient-to-br  transition-opacity",
+    <div className={classNames("absolute inset-0 h-full w-full py-2 rounded-2xl bg-gradient-to-br transition-opacity",
         gradient,
         inViewFeature === id ? "opacity-100" : "opacity-0"
     )}>
@@ -61,16 +61,19 @@ export const Todo = ({id}: CardProps) => {
                 />
 
             </div>
-            <p className='font-bold pl-[3.5rem] pr-[0.5rem] h-full flex items-center text-[0.975rem] leading-4 text-gray-800'>Everybody deserves to be treated equally and with respect</p>
-            <div className="flex justify-center ">
+            <p className='font-bold pl-[3.5rem] sm:pl-[5rem] pr-[0.5rem] sm:pr-[1rem] h-full flex items-center text-[0.975rem] sm:text-[1.2rem] leading-4 sm:leading-5 text-gray-800'>Everybody deserves to be treated equally and with respect</p>
+            <div className="flex justify-center sm:justify-end ">
                 <Image 
                     src={Alex}
-                    className='absolute bottom-2 opacity-15 object-cover w-[4.2rem] '
+                    className='absolute bottom-2 sm:bottom-0 opacity-15 object-cover w-[4.2rem] sm:mx-auto '
                     title='Damian'
                     alt='Damian'
                 />
-
             </div>
+            <Image 
+                src={Logo}
+                className='absolute bottom-2 w-[6rem] left-1/3 '
+            />
             
         </FeatureCard>
     )
