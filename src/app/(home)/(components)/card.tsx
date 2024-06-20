@@ -54,7 +54,7 @@ export const Todo = ({id}: CardProps) => {
                 />
 
             </div>
-            <p className='z-10 pl-[3.5rem] pr-[0.5rem] h-full flex items-center text-[0.875rem] leading-4 text-gray-800'>"Everybody deserves to be treated equally and with respect"</p>
+            <p className='z-10 pl-[3.5rem] pr-[0.5rem] h-full flex items-center text-[0.875rem] leading-4 text-gray-800'>Everybody deserves to be treated equally and with respect</p>
             <div className="flex justify-center ">
                 <Image 
                     src={Damian}
@@ -88,7 +88,7 @@ export const Colors = ({id}: CardProps) => {
                 />
 
             </div>
-            <p className='z-10 pl-[3.5rem] pr-[0.5rem] h-full flex items-center text-[0.875rem] leading-4 text-gray-800'>"Make sure all our customers receive same quality"</p>
+            <p className='z-10 pl-[3.5rem] pr-[0.5rem] h-full flex items-center text-[0.875rem] leading-4 text-gray-800'>Make sure all our customers receive same quality</p>
             <div className="flex justify-center ">
                 <Image 
                     src={Tsega}
