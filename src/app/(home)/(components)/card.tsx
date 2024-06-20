@@ -73,6 +73,8 @@ export const Todo = ({id}: CardProps) => {
             <Image 
                 src={Logo}
                 className='absolute bottom-2 w-[6rem] left-1/3 '
+                title='Blueline logo'
+                alt='Blueline logo'
             />
             
         </FeatureCard>
