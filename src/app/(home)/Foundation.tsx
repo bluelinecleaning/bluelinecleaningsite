@@ -17,7 +17,7 @@ const Foundation = () => {
         <h3 className='font-bold text-[1.875rem] leading-[2rem] text-center'>WHO WE ARE</h3>
         <div className='pt-[2rem] text-[0.875rem] flex flex-col gap-[0.5rem]'>
             <p className=''>We are a <span className='font-bold'>registered charity and social enterprise</span> organization that has been dedicated to creating meaningful employment opportunities in Tasmania for over 130 years.</p>
-            <p>We have a rich history of social impact and excellence in laundry and linen services. Building on this strong foundation, we've expanded our offerings to include comprehensive cleaning solutions across various sectors.</p>
+            <p>We have a rich history of social impact and excellence in laundry and linen services. Building on this strong foundation, we&apos;ve expanded our offerings to include comprehensive cleaning solutions across various sectors.</p>
             <p>Our aim is to ensure <span className='font-bold'>cleanliness and hygiene standards</span> are met with the highest level of professionalism whilst growing our <span className='font-bold'>social purpose</span>. Our service categories encompass Commercial Cleaning, Industrial Cleaning, Domestic Cleaning, and School Cleaning.</p>
         </div>
     </div>
