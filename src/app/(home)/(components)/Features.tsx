@@ -28,8 +28,8 @@ export default function Features({ children, id }: Props) {
   
     return (
     <div ref={ref} className={classNames(
-        "py-[5rem] text-gray-300 transition-colors",
-        isInView ? "text-black" : "text-gray-300"
+        "py-[2rem] text-blueBranding transition-colors",
+        isInView ? "text-[1.2rem] leading-[1.375rem] font-bold text-blueBranding" : "text-gray-300"
     )}>{children}</div>
   )
 }
