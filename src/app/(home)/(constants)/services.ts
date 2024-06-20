@@ -10,6 +10,7 @@ import IndustrialSticker from '../../../../assets/alex.png'
 import DomesticSticker from '../../../../assets/Tsega.png'
 import FloorSticker from '../../../../assets/Glenda.png'
 import SchoolSticker from '../../../../assets/james.png'
+import { Avaialability, Colors, Music, Todo } from '../(components)/card'
 
 export const ServicesArray = [
     {
@@ -18,6 +19,7 @@ export const ServicesArray = [
         short: 'Let us take care of your commercial premises, from offices to medical facilities, we clean and disinfect those everyday areas at the most convinient time for your operations',
         image: Commercial,
         sticker: CommercialSticker,
+        card: Todo,
         options: [
             {
                 id: 1,
@@ -47,6 +49,7 @@ export const ServicesArray = [
         short: 'We go beyond factory house keeping activities, we commit to deliver a comprehensive risk assessment and a preventative cleaning schedule for your machines, equipment and facilities',
         image: Industrial,
         sticker: FloorSticker,
+        card: Colors,
         options: [
             {
                 id: 1,
@@ -76,6 +79,7 @@ export const ServicesArray = [
         short: 'Keeping your house tidy has never been easier, plus, we offer free linen for your bedrooms for the first 3 months',
         image: Domestic,
         sticker: DomesticSticker,
+        card: Avaialability,
         options: [
             {
                 id: 1,
@@ -105,6 +109,7 @@ export const ServicesArray = [
         short: 'Beyond just tidying up, school cleaning is a key strategy for ensuring a safe and encouraging learning environment, sanitizing common areas and killing germs and bacterias that present a risk for our children.',
         image: School,
         sticker: SchoolSticker,
+        card: Music,
         options: [
             {
                 id: 1,

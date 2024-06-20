@@ -16,13 +16,13 @@ export default function What() {
   
     return (
     <main className='pt-[3rem] w-full bg-gradient-to-r from-[#2896FC] to-[#0181AC]' id='what'>
-        <article className='px-[1rem] pb-[3rem] fira'>
+        <article className='px-[1rem] sm:px-[2rem] pb-[3rem] fira'>
             <h2 className='font-bold text-white text-[1.875rem] leading-[2rem] text-center'>What We Do?</h2>
-            <section className='mt-[2rem] grid grid-cols-1 gap-[2rem]'>
+            <section className='mt-[2rem] grid grid-cols-1 sm:grid-cols-2 gap-[2rem]'>
                 {ServicesArray.map((service => (
                    <div 
                         key={service.id}
-                        className='h-[20rem] mx-auto bg-white relative max-w-xs overflow-hidden rounded-2xl border border-gray-300 shadow-lg shadow-white group'
+                        className='h-[20rem] mx-auto bg-white relative max-w-xs overflow-hidden rounded-2xl border border-gray-300 shadow shadow-white group'
                     >
                         <Image 
                             src={service.image}

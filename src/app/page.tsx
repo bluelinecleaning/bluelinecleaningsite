@@ -3,6 +3,7 @@ import Form from "./(home)/Form";
 import Foundation from "./(home)/Foundation";
 import Impact from "./(home)/Impact";
 import Intro from "./(home)/Intro";
+import Quality from "./(home)/Quality";
 import What from "./(home)/What";
 
 export default function Home() {
@@ -11,7 +12,8 @@ export default function Home() {
       <Intro />
       <What />
       <Impact />
-      {/* <Foundation /> */}
+      <Foundation />
+      <Quality />
       <Form />
     </div>
   );
