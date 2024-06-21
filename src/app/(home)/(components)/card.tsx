@@ -49,8 +49,8 @@ export const Todo = ({id}: CardProps) => {
                 <Image 
                     src={Integrity}
                     className=''
-                    title='Damian'
-                    alt='Damian'
+                    title='Integrity icon'
+                    alt='Two hands shaking icon'
                 />
                 
                 <Image 
@@ -66,13 +66,15 @@ export const Todo = ({id}: CardProps) => {
                 <Image 
                     src={Alex}
                     className='absolute bottom-2 sm:bottom-0 opacity-15 object-cover w-[4.2rem] sm:mx-auto '
-                    title='Damian'
-                    alt='Damian'
+                    title='NDIS participant working'
+                    alt="Photo of an NDIS participant Blueline's worker"
                 />
             </div>
             <Image 
                 src={Logo}
                 className='absolute bottom-2 w-[6rem] left-1/3 '
+                title='Blueline logo'
+                alt='Blueline logo'
             />
             
         </FeatureCard>
@@ -86,8 +88,8 @@ export const Colors = ({id}: CardProps) => {
                 <Image 
                     src={Iso}
                     className=' rounded-full'
-                    title='Damian'
-                    alt='Damian'
+                    title='Quality icon'
+                    alt='Quality icon'
                 />
                 
                 <Image 
@@ -98,16 +100,21 @@ export const Colors = ({id}: CardProps) => {
                 />
 
             </div>
-            <p className='font-bold pl-[3.5rem] pr-[0.5rem] h-full flex items-center text-[0.975rem] leading-4 text-gray-800'>Make sure all our customers receive same quality</p>
-            <div className="flex justify-center ">
+            <p className='font-bold pl-[3.5rem] sm:pl-[5rem] pr-[0.5rem] sm:pr-[1rem] h-full flex items-center text-[0.975rem] sm:text-[1.2rem] leading-4 sm:leading-5 text-gray-800'>Make sure all our customers receive same quality</p>
+            <div className="flex justify-center sm:justify-end ">
                 <Image 
                     src={Tsega}
-                    className='absolute bottom-2 opacity-15 object-cover w-[4.2rem] '
-                    title='Damian'
-                    alt='Damian'
+                    className='absolute bottom-2 sm:bottom-1/3 opacity-15 object-cover w-[4.2rem] sm:mx-auto '
+                    title='NDIS participant working'
+                    alt="Photo of an NDIS participant Blueline's worker"
                 />
-
             </div>
+            <Image 
+                src={Logo}
+                className='absolute bottom-2 w-[6rem] left-1/3 '
+                title='Blueline logo'
+                alt='Blueline logo'
+            />
         </FeatureCard>
     )
 }
@@ -119,8 +126,8 @@ export const Avaialability = ({id}: CardProps) => {
                 <Image 
                     src={Safe}
                     className=''
-                    title='Damian'
-                    alt='Damian'
+                    title='Shield icon'
+                    alt='Shield icon'
                 />
                 
                 <Image 
@@ -131,16 +138,21 @@ export const Avaialability = ({id}: CardProps) => {
                 />
 
             </div>
-            <p className='font-bold pl-[3.5rem] pr-[0.5rem] h-full flex items-center text-[0.975rem] leading-4 text-gray-800'>Safe Environment, Safe workplace... Everyone gets to go home safe</p>
-            <div className="flex justify-center ">
+            <p className='font-bold pl-[3.5rem] sm:pl-[5rem] pr-[0.5rem] sm:pr-[1rem] h-full flex items-center text-[0.975rem] sm:text-[1.2rem] leading-4 sm:leading-5 text-gray-800'>Safe Environment, Safe workplace... Everyone gets to go home safe</p>
+            <div className="flex justify-center sm:justify-end ">
                 <Image 
                     src={James}
-                    className='absolute bottom-2 opacity-15 object-cover w-[3.8rem] '
-                    title='Damian'
-                    alt='Damian'
+                    className='absolute bottom-2 sm:top-0 sm:left-1/2 opacity-15 object-cover w-[3.8rem] sm:mx-auto '
+                    title='NDIS participant working'
+                    alt="Photo of an NDIS participant Blueline's worker"
                 />
-
             </div>
+            <Image 
+                src={Logo}
+                className='absolute bottom-2 w-[6rem] left-1/3 '
+                title='Blueline logo'
+                alt='Blueline logo'
+            />
         </FeatureCard>
     )
 }
@@ -152,8 +164,8 @@ export const Music = ({id}: CardProps) => {
                 <Image 
                     src={People}
                     className=''
-                    title='Damian'
-                    alt='Damian'
+                    title='People icon'
+                    alt='An icon represening 3 people or a community'
                 />
                 
                 <Image 
@@ -164,16 +176,21 @@ export const Music = ({id}: CardProps) => {
                 />
 
             </div>
-            <p className='font-bold pl-[3.5rem] pr-[0.5rem] h-full flex items-center text-[0.975rem] leading-4 text-gray-800'>Our staff well-being stands as our biggest priority, and supporting them means everything to us</p>
+            <p className='font-bold pl-[3.5rem] sm:pl-[5rem] pr-[0.5rem] sm:pr-[1rem] h-full flex items-center text-[0.975rem] sm:text-[1.2rem] leading-4 sm:leading-5 text-gray-800'>Our staff well-being stands as our biggest priority, and supporting them means everything to us</p>
             <div className="flex justify-center ">
                 <Image 
                     src={Damian}
-                    className='absolute bottom-2 opacity-15 object-cover w-[3.3rem] '
-                    title='Damian'
-                    alt='Damian'
+                    className='absolute bottom-2 sm:bottom-0 sm:left-1/2 opacity-15 object-cover w-[3.3rem] sm:mx-auto  '
+                    title='NDIS participant working'
+                    alt="Photo of an NDIS participant Blueline's worker"
                 />
-
             </div>
+            <Image 
+                src={Logo}
+                className='absolute bottom-2 w-[6rem] left-1/3 '
+                title='Blueline logo'
+                alt='Blueline logo'
+            />
         </FeatureCard>
     )
 }
@@ -185,8 +202,8 @@ export const Safety = ({id} : CardProps) => {
                 <Image 
                     src={Care}
                     className=''
-                    title='Damian'
-                    alt='Damian'
+                    title='Care icon'
+                    alt='Care icon'
                 />
                 
                 <Image 
@@ -197,16 +214,21 @@ export const Safety = ({id} : CardProps) => {
                 />
 
             </div>
-            <p className='font-bold pl-[3.5rem] pr-[0.5rem] h-full flex items-center text-[0.975rem] leading-4 text-gray-800'>Everyone gets an equal opportunity to learn and try new things, and develop their skills</p>
+            <p className='font-bold pl-[3.5rem] sm:pl-[5rem] pr-[0.5rem] sm:pr-[1rem] h-full flex items-center text-[0.975rem] sm:text-[1.2rem] leading-4 sm:leading-5 text-gray-800'>Everyone gets an equal opportunity to learn and try new things, and develop their skills</p>
             <div className="flex justify-center ">
                 <Image 
                     src={Andrew}
-                    className='absolute bottom-2 opacity-15 object-cover w-[3.1rem] '
-                    title='Damian'
-                    alt='Damian'
+                    className='absolute bottom-2 sm:bottom-0 sm:right-0 opacity-15 object-cover w-[3.1rem] sm:mx-auto '
+                    title='NDIS participant working'
+                    alt="Photo of an NDIS participant Blueline's worker"
                 />
-
             </div>
+            <Image 
+                src={Logo}
+                className='absolute bottom-2 w-[6rem] left-1/3 '
+                title='Blueline logo'
+                alt='Blueline logo'
+            />
         </FeatureCard>
     )
 }

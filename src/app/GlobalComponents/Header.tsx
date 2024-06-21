@@ -30,10 +30,10 @@ export default function Header() {
 
   return (
     <header className={`fixed z-50 opacity-95 bg-white w-full rounded-b-lg ${mobileMenu === false ? 'shadow-2xl border-b border-blueBranding': ''}`}>
-      <div className='fira page py-[1rem] lg:py-[2rem] flex items-center xl:justify-between'>
+      <div className='fira px-[1rem] py-[1rem] sm:mx-auto sm:px-[2rem] md:px-[4rem] flex items-center xl:justify-between'>
         <Link href='/'>
           <Image 
-            className='w-[3rem]'
+            className='w-[3rem] md:w-[4.5rem] md:object-cover'
             src={Logo}
             alt='Blueline Logo'
             title='Blueline Logo'

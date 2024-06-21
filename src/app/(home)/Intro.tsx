@@ -10,7 +10,7 @@ import Charity from '../../../assets/charity.png'
 
 export default function Intro() {
   return (
-    <article className=' w-full fira h-[22.5rem] sm:h-[27.5rem] opacity-80'>
+    <article className=' w-full fira h-[22.5rem] sm:h-[27.5rem] md:h-[40.5rem] opacity-80'>
       {/* Bg image */}
       <div className="-z-30 absolute inset-0 h-[30.5rem] sm:h-[35.5rem] md:h-[48.5rem] xl:h-[62.5rem]">
         <Image 
@@ -25,44 +25,46 @@ export default function Intro() {
         <div className="absolute inset-0 bg-black opacity-60" aria-hidden="true"></div>  
       </div>
 
-      <section className=" page h-full ">
-        <Image 
-          src={WhiteLogo}
-          className='h-[6.5rem] w-auto'
-          title='Blueline Cleaning Logo'
-          alt='Blueline Cleaning Logo'
-        />
-        <div className="mt-[1rem] flex gap-[2rem] ">
-          <div className="flex flex-col gap-[1rem] w-2/5">
-            {/* Logos */}
-            <div className="grid grid-cols-2 gap-2 rounded-xl">
-              <Image 
-                src={Iso1}
-                className='w-[4rem] sm:w-[4.5rem] h-auto sm:mx-auto'
-                title='ISO 14001 Certificate'
-                alt='ISO 14001 Certification'
-              />
-              <Image 
-                src={Iso2}
-                className='w-[4rem] sm:w-[4.5rem] h-auto sm:mx-auto'
-                title='ISO 9001 Certificate'
-                alt='ISO 9001 Certification'
-              />
-              <Image 
-                src={Charity}
-                className='sm:mt-[1rem] w-[6rem] h-auto col-span-2 mx-auto'
-                title='Registered Charity Certificate'
-                alt='Registered Charity Certification'
-              />
+      <section className=" page h-full md:flex md:items-center ">
+        <div>
+          <Image 
+            src={WhiteLogo}
+            className='h-[6.5rem] w-auto'
+            title='Blueline Cleaning Logo'
+            alt='Blueline Cleaning Logo'
+          />
+          <div className="mt-[1rem] md:mt-[3rem] flex gap-[2rem] ">
+            <div className="flex flex-col gap-[1rem] w-2/5">
+              {/* Logos */}
+              <div className="grid grid-cols-2 gap-2 md:gap-0 rounded-xl">
+                <Image 
+                  src={Iso1}
+                  className='w-[4rem] sm:w-[4.5rem] h-auto sm:mx-auto'
+                  title='ISO 14001 Certificate'
+                  alt='ISO 14001 Certification'
+                />
+                <Image 
+                  src={Iso2}
+                  className='w-[4rem] sm:w-[4.5rem] h-auto sm:mx-auto'
+                  title='ISO 9001 Certificate'
+                  alt='ISO 9001 Certification'
+                />
+                <Image 
+                  src={Charity}
+                  className='sm:mt-[1rem] w-[4rem] sm:w-[6rem] h-auto col-span-2 mx-auto'
+                  title='Registered Charity Certificate'
+                  alt='Registered Charity Certification'
+                />
 
+              </div>
             </div>
-          </div>
-          {/* Text */}
-          <div className="flex flex-col gap-[0.5rem] text-white w-3/5">
-            <h1 className='font-bold text-[1.3rem] leading-[1.5rem]'>Registered Charity Organization Providing Cleaning Solutions Across Tasmania</h1>
-            <h3 className='leading-[1.2rem]'>
-              Your mess supports our mission!
-            </h3>
+            {/* Text */}
+            <div className="flex flex-col gap-[0.5rem] text-white w-3/5">
+              <h1 className='font-bold text-[1.3rem] md:text-[1.5rem] leading-[1.5rem] md:leading-[1.7rem]'>Registered Charity Organization Providing Cleaning Solutions Across Tasmania</h1>
+              <h3 className='md:text-[1.2rem] leading-[1.2rem] md:leading-[1.4rem]'>
+                Your mess supports our mission!
+              </h3>
+            </div>
           </div>
         </div>
        
