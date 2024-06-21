@@ -12,6 +12,9 @@ html {
  }
 
 .page {
-  @apply px-[1rem] py-[1rem] sm:mx-auto sm:px-[2rem] sm:py-[2rem] md:px-[4rem]
+  @apply px-[1rem] py-[1rem] sm:mx-auto sm:px-[2rem] sm:py-[2rem] md:px-[4rem] lg:px-[6rem];
 }
   
+.mainTitle {
+  @apply font-bold text-white text-[1.875rem] md:text-[2.3rem] lg:text-[3rem] leading-[2rem] text-center;
+}
