@@ -29,11 +29,11 @@ export default function Header() {
 
 
   return (
-    <header className={`fixed z-50 opacity-95 bg-white w-full rounded-b-lg ${mobileMenu === false ? 'shadow-2xl border-b border-blueBranding': ''}`}>
-      <div className='fira px-[1rem] py-[1rem] sm:mx-auto sm:px-[2rem] md:px-[4rem] lg:px-[6rem] flex items-center xl:justify-between'>
+    <header className={`fixed lg:sticky z-50 opacity-95 bg-white w-full rounded-b-lg ${mobileMenu === false ? 'shadow-2xl border-b border-blueBranding': ''}`}>
+      <div className='fira px-[1rem] py-[1rem] sm:mx-auto sm:px-[2rem] md:px-[4rem] lg:px-[6rem] flex items-center lg:justify-between'>
         <Link href='/'>
           <Image 
-            className='w-[3rem] md:w-[4.5rem] lg:w-[6rem] md:object-cover'
+            className='w-[3rem] md:object-cover'
             src={Logo}
             alt='Blueline Logo'
             title='Blueline Logo'
@@ -43,7 +43,7 @@ export default function Header() {
         </Link>
         <button
           id='menu-button'
-          className='xl:hidden cursor-pointer relative ml-auto'
+          className='lg:hidden cursor-pointer relative ml-auto'
           aria-label='Toogle mobile menu'
           onClick={() => setMobileMenu(!mobileMenu)}
         >
@@ -64,13 +64,13 @@ export default function Header() {
         </button>
 
         {/* Nav bar desktop */}
-        <div className='hidden xl:flex'>
-          <nav className='flex  gap-[4rem]'>
+        <div className='hidden lg:flex'>
+          <nav className='flex gap-[4rem]'>
             <ul className="flex justify-between items-center gap-[1rem] text-blueBranding font-bold text-[1rem] hover:cursor-pointer">
-              <li className='hover:scale-105'><Link href={'/'}>HOME</Link></li>
-              <li className='hover:scale-105'>OUR CLEANING SERVICES</li>
-              <li className='hover:scale-105'>OUR PEOPLE</li>
-              <li className='hover:scale-105'>CONTACT</li>  
+              <li className='hover:text-gray-400'><Link href={'/'}>HOME</Link></li>
+              <li className='hover:text-gray-400'>OUR CLEANING SERVICES</li>
+              <li className='hover:text-gray-400'>OUR PEOPLE</li>
+              <li className='hover:text-gray-400'>CONTACT</li>  
             </ul>
             <a href='tel:+61428994431' className=' flex items-center gap-2 bg-blueBranding text-white py-2 px-4 rounded w-min ml-auto hover:bg-white hover:text-blueBranding hover:font-bold ease-in-out duration-300  '>
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">

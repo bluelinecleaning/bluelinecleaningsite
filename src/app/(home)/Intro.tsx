@@ -11,9 +11,9 @@ import Circles from '../../../assets/white_circles_logo.png'
 
 export default function Intro() {
   return (
-    <article className='lg:relative lg:pt-[12rem] w-full fira h-[22.5rem] sm:h-[27.5rem] md:h-[40.5rem] lg:h-[48.5rem] opacity-80'>
+    <article className='lg:relative w-full fira h-[22.5rem] sm:h-[27.5rem] md:h-[40.5rem] lg:h-[40.5rem] opacity-80'>
       {/* Bg image */}
-      <div className="-z-30 absolute inset-0 h-[30.5rem] sm:h-[35.5rem] md:h-[48.5rem] xl:h-[62.5rem]">
+      <div className="-z-30 absolute inset-0 h-[30.5rem] sm:h-[35.5rem] md:h-[48.5rem] lg:h-auto ">
         <Image 
             className=' w-full h-full object-cover '
             src={Hero} 

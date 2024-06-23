@@ -15,9 +15,14 @@ export default function What() {
     const [currentService, setCurrentService] = useState<number>()
   
     return (
-    <main className='pt-[3rem] md:pt-[5rem] w-full bg-gradient-to-r from-[#2896FC] to-[#0181AC]' id='what'>
-        <article className='px-[1rem] sm:px-[2rem] lg:px-[6rem] pb-[3rem] md:pt-[5rem] lg:pb-[8rem] fira'>
-            <h2 className='mainTitle'>What We Do?</h2>
+    <main className='pt-[3rem] md:pt-[5rem] lg:pt-[8rem] w-full bg-gradient-to-r from-[#2896FC] to-[#0181AC]' id='what'>
+        <article className='px-[1rem] sm:px-[2rem]  md:px-[4rem] lg:px-[6rem] pb-[3rem] lg:pb-[8rem] fira'>
+            <h2 className='mainTitle text-white'>What We Do?</h2>
+            {/* Text */}
+            <div className="mt-[2rem] md:mt-[3rem] lg:mt-[6rem] flex flex-col gap-[1rem] text-white">
+                <p className='narrative'>Our commitment to <span className='text-orange-300 font-semibold'>quality cleaning services</span> is matched by our dedication to social impact. As a <span className='text-orange-300 font-bold'>registered charity</span> and <span className='text-orange-300 font-bold'>social enterprise</span>, we strive to create employment opportunities and support communities while delivering exceptional cleaning solutions. Our comprehensive range of services, from Commercial Cleaning to School Cleaning, ensures that every space we service is maintained to the <span className='text-orange-300 font-bold'>highest standards</span> of cleanliness and hygiene.</p>
+                <p className='narrative'>Partner with Blueline to experience professional cleaning services that make a difference. Together, we can create cleaner, safer environments and contribute to meaningful social change. <span className='text-orange-300 font-bold'>Contact us </span>today to learn more about our services and how we can support your cleaning needs.</p>
+            </div>
             <section className='mt-[2rem] md:mt-[4rem] lg:mt-[6rem] grid grid-cols-1 sm:grid-cols-2 gap-[2rem]'>
                 {ServicesArray.map((service => (
                    <div 
