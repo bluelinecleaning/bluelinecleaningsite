@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 213 187">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #0081aa;
+        font-family: FiraSans-BoldItalic, 'Fira Sans';
+        font-size: 24.63px;
+        font-style: italic;
+        font-weight: 700;
+      }
+
+      .cls-2 {
+        fill: rgba(249, 249, 249, .79);
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <circle class="cls-2" cx="106.96" cy="94.72" r="88.72"/>
+  <text class="cls-1"><tspan x="63.05" y="84.74">Social</tspan><tspan x="53.77" y="114.3">Impact</tspan></text>
+</svg>

@@ -10,7 +10,6 @@ import { ServicesArray } from '../(constants)/services'
 export default function ServiceExplanation({ service }:any) {
 
   const activeService = ServicesArray.find(s => s.id === service)
-  console.log(activeService)
 
   return (
     <article 
