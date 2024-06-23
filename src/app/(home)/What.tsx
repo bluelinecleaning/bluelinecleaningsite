@@ -41,7 +41,7 @@ export default function What() {
                                 <p className='lg:text-[1.2rem]'>{service.short}</p>
                                 <Link 
                                     className='mt-2 text-center mx-auto lg:text-[1.2rem]' onClick={() => setCurrentService(service.id)}
-                                    href={`/#serviceDetails`}
+                                    href={`/services/${service.url}`}
                                 >
                                     See more
                                 </Link>

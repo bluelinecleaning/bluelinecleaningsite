@@ -6,7 +6,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 // Assets
-import Logo from '../../../assets/blue-logo.png'
+import Logo from '../../../assets/logo3.svg'
 
 
 export default function Header() {
@@ -33,7 +33,7 @@ export default function Header() {
       <div className='fira px-[1rem] py-[1rem] sm:mx-auto sm:px-[2rem] md:px-[4rem] lg:px-[6rem] flex items-center lg:justify-between'>
         <Link href='/'>
           <Image 
-            className='w-[3rem] md:object-cover'
+            className='w-[7rem] md:object-cover'
             src={Logo}
             alt='Blueline Logo'
             title='Blueline Logo'

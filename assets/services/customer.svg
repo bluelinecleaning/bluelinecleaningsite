@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 213 187">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: 0em;
+      }
+
+      .cls-2 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-3 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-4 {
+        fill: rgba(0, 129, 170, .82);
+        stroke-width: 0px;
+      }
+
+      .cls-5 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-6 {
+        fill: #f9f9f9;
+        font-family: FiraSans-BoldItalic, 'Fira Sans';
+        font-size: 23.73px;
+        font-style: italic;
+        font-weight: 700;
+      }
+
+      .cls-7 {
+        letter-spacing: 0em;
+      }
+    </style>
+  </defs>
+  <circle class="cls-4" cx="108.73" cy="94.57" r="89.43"/>
+  <text class="cls-6" transform="translate(46.41 75.49)"><tspan class="cls-5" x="0" y="0">C</tspan><tspan x="13.03" y="0">us</tspan><tspan class="cls-3" x="37.59" y="0">t</tspan><tspan class="cls-7" x="46.04" y="0">omer &amp;</tspan><tspan class="cls-2" x="2.21" y="28.48">C</tspan><tspan x="15.14" y="28.48">ommuni</tspan><tspan class="cls-1" x="101.6" y="28.48">t</tspan><tspan x="110.4" y="28.48">y</tspan><tspan x="24.31" y="56.96">Benefit</tspan></text>
+</svg>
