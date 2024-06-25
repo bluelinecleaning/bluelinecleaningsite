@@ -18,9 +18,7 @@ interface OptionContent {
 
 
 export default function ServiceOptions( {service}: any ) {
-  
-    console.log(service)
-  
+    
     return (
     <article className='page'>
         <div>
@@ -53,6 +51,12 @@ export default function ServiceOptions( {service}: any ) {
                                 </li>
                             ))}
                         </ul>
+
+                        {/* CTA */}
+                        <a href='tel:+61428994431' className='mt-[1rem] mx-auto flex items-center bg-blueBranding shadow-lg text-white py-2 px-4 rounded w-min lg:text-[1.5rem]'>
+                            <p>0428994431</p>
+                        </a>
+                        <div className="mt-[2rem] mb-[1rem] border border-blueBranding mx-auto w-[5rem] "></div>
                     </div>
                 </section>
             ))}

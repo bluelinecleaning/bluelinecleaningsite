@@ -35,9 +35,9 @@ export default function Intro() {
             alt='Blueline Cleaning Logo'
           />
           <div className="mt-[1rem] md:mt-[3rem] flex gap-[2rem] lg:gap-[4rem] ">
-            <div className="flex flex-col gap-[1rem] w-2/5">
+            <div className="flex flex-col gap-[1rem] w-2/5 lg:w-1/5 ">
               {/* Logos */}
-              <div className="grid grid-cols-2 lg:grid-cols-3 gap-2 md:gap-0 rounded-xl">
+              <div className="grid grid-cols-2 md:grid-cols-3 md:items-center gap-2 rounded-xl">
                 <Image 
                   src={Iso1}
                   className='w-[4rem] sm:w-[4.5rem] lg:w-[6rem] h-auto sm:mx-auto'
@@ -52,7 +52,7 @@ export default function Intro() {
                 />
                 <Image 
                   src={Charity}
-                  className='sm:mt-[1rem] w-[4rem] sm:w-[6rem] lg:w-[8rem] h-auto col-span-2 mx-auto'
+                  className='sm:mt-[1rem] lg:mt-0 w-[4rem] sm:w-[6rem] lg:w-[6rem] h-auto col-span-2 md:col-span-1 mx-auto'
                   title='Registered Charity Certificate'
                   alt='Registered Charity Certification'
                 />

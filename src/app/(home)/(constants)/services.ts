@@ -139,20 +139,16 @@ export const ServicesArray = [
                 optionContent: [
                     {
                         descriptionId: 1,
-                        descriptionText: "Regular office cleaning schedules to maintain a spotless working environment."
+                        descriptionText: "Large-scale cleaning operations that include sweeping, mopping, and dusting."
                     },
                     {
                         descriptionId: 2,
-                        descriptionText: "Cleaning plans to fit the operational hours and specific needs of your office."
+                        descriptionText: "Use of industrial-grade cleaning equipment to handle extensive spaces efficiently."
                     },
                     {
                         descriptionId: 3,
-                        descriptionText: "Services include dusting, vacuuming, glass cleaning, sanitizing workstations and touch points, and maintaining common areas such as kitchens and restrooms."
-                    },
-                    {
-                        descriptionId: 4,
-                        descriptionText: "Steam cleaning of carpets and upholstery as required."
-                    },
+                        descriptionText: "Ensuring safety and minimizing disruption to warehouse operations."
+                    }
                 ]
             },
             {
@@ -162,66 +158,54 @@ export const ServicesArray = [
                 optionContent: [
                     {
                         descriptionId: 1,
-                        descriptionText: "Regular office cleaning schedules to maintain a spotless working environment."
+                        descriptionText: "Detailed cleaning of heavy machinery and production areas to maintain hygiene and operational efficiency."
                     },
                     {
                         descriptionId: 2,
-                        descriptionText: "Cleaning plans to fit the operational hours and specific needs of your office."
+                        descriptionText: "Importance of minimizing downtime through scheduled maintenance cleaning."
                     },
                     {
                         descriptionId: 3,
-                        descriptionText: "Services include dusting, vacuuming, glass cleaning, sanitizing workstations and touch points, and maintaining common areas such as kitchens and restrooms."
-                    },
-                    {
-                        descriptionId: 4,
-                        descriptionText: "Steam cleaning of carpets and upholstery as required."
-                    },
+                        descriptionText: "Safe handling and disposal of industrial waste."
+                    }
                 ]
             },
             {
                 id: 3,
-                optionTitle: "Equipment Cleaning",
+                optionTitle: "End of Build",
                 optionPrice: 45,
                 optionContent: [
                     {
                         descriptionId: 1,
-                        descriptionText: "Regular office cleaning schedules to maintain a spotless working environment."
+                        descriptionText: "Post-construction cleaning services to prepare sites for occupancy."
                     },
                     {
                         descriptionId: 2,
-                        descriptionText: "Cleaning plans to fit the operational hours and specific needs of your office."
+                        descriptionText: "Removal of construction debris, dust, and residue."
                     },
                     {
                         descriptionId: 3,
-                        descriptionText: "Services include dusting, vacuuming, glass cleaning, sanitizing workstations and touch points, and maintaining common areas such as kitchens and restrooms."
-                    },
-                    {
-                        descriptionId: 4,
-                        descriptionText: "Steam cleaning of carpets and upholstery as required."
-                    },
+                        descriptionText: "Ensuring the site is ready for inspection and handover."
+                    }
                 ]
             },
             {
                 id: 4,
-                optionTitle: "Ventilation and Duct Cleaning",
+                optionTitle: "Maintenance Cleaning",
                 optionPrice: 45,
                 optionContent: [
                     {
                         descriptionId: 1,
-                        descriptionText: "Regular office cleaning schedules to maintain a spotless working environment."
+                        descriptionText: "Regular maintenance cleaning schedules to keep industrial facilities in optimal condition."
                     },
                     {
                         descriptionId: 2,
-                        descriptionText: "Cleaning plans to fit the operational hours and specific needs of your office."
+                        descriptionText: "Preventative cleaning measures to prolong the life of equipment and infrastructure."
                     },
                     {
                         descriptionId: 3,
-                        descriptionText: "Services include dusting, vacuuming, glass cleaning, sanitizing workstations and touch points, and maintaining common areas such as kitchens and restrooms."
-                    },
-                    {
-                        descriptionId: 4,
-                        descriptionText: "Steam cleaning of carpets and upholstery as required."
-                    },
+                        descriptionText: "Services include floor cleaning, equipment cleaning, and general maintenance tasks."
+                    }
                 ]
             }
         ],
@@ -249,20 +233,16 @@ export const ServicesArray = [
                 optionContent: [
                     {
                         descriptionId: 1,
-                        descriptionText: "Regular office cleaning schedules to maintain a spotless working environment."
+                        descriptionText: "Scheduled weekly or bi-weekly cleaning to maintain a clean home."
                     },
                     {
                         descriptionId: 2,
-                        descriptionText: "Cleaning plans to fit the operational hours and specific needs of your office."
+                        descriptionText: "General housekeeping tasks including dusting, vacuuming, bathrooms, mopping, and surface cleaning."
                     },
                     {
                         descriptionId: 3,
-                        descriptionText: "Services include dusting, vacuuming, glass cleaning, sanitizing workstations and touch points, and maintaining common areas such as kitchens and restrooms."
-                    },
-                    {
-                        descriptionId: 4,
-                        descriptionText: "Steam cleaning of carpets and upholstery as required."
-                    },
+                        descriptionText: "Customizable cleaning plans to fit your household's needs."
+                    }
                 ]
             },
             {
@@ -272,15 +252,15 @@ export const ServicesArray = [
                 optionContent: [
                     {
                         descriptionId: 1,
-                        descriptionText: "Regular office cleaning schedules to maintain a spotless working environment."
+                        descriptionText: "Intensive cleaning of all areas, focusing on hard-to-reach and neglected spots."
                     },
                     {
                         descriptionId: 2,
-                        descriptionText: "Cleaning plans to fit the operational hours and specific needs of your office."
+                        descriptionText: "Services include scrubbing bathrooms, kitchens, and cleaning behind appliances and furniture. Thorough cleaning of windows, curtains, and air vents, along with regular cleaning tasks."
                     },
                     {
                         descriptionId: 3,
-                        descriptionText: "Services include dusting, vacuuming, glass cleaning, sanitizing workstations and touch points, and maintaining common areas such as kitchens and restrooms."
+                        descriptionText: "Ideal for preparing your home for special occasions or after a prolonged absence."
                     },
                     {
                         descriptionId: 4,
@@ -290,24 +270,24 @@ export const ServicesArray = [
             },
             {
                 id: 3,
-                optionTitle: "Spring Cleaning",
+                optionTitle: "Bond Cleaning",
                 optionPrice: 45,
                 optionContent: [
                     {
                         descriptionId: 1,
-                        descriptionText: "Regular office cleaning schedules to maintain a spotless working environment."
+                        descriptionText: "End-of-lease cleaning to ensure the property is left in pristine condition."
                     },
                     {
                         descriptionId: 2,
-                        descriptionText: "Cleaning plans to fit the operational hours and specific needs of your office."
+                        descriptionText: "Detailed cleaning services designed to meet the requirements for bond return."
                     },
                     {
                         descriptionId: 3,
-                        descriptionText: "Services include dusting, vacuuming, glass cleaning, sanitizing workstations and touch points, and maintaining common areas such as kitchens and restrooms."
+                        descriptionText: "Includes carpet cleaning, wall washing, and appliance cleaning."
                     },
                     {
                         descriptionId: 4,
-                        descriptionText: "Steam cleaning of carpets and upholstery as required."
+                        descriptionText: "Steam cleaning of carpets and upholstery as required"
                     },
                 ]
             },
@@ -318,20 +298,16 @@ export const ServicesArray = [
                 optionContent: [
                     {
                         descriptionId: 1,
-                        descriptionText: "Regular office cleaning schedules to maintain a spotless working environment."
+                        descriptionText: "Cleaning services after home renovations to remove construction dust and debris."
                     },
                     {
                         descriptionId: 2,
-                        descriptionText: "Cleaning plans to fit the operational hours and specific needs of your office."
+                        descriptionText: "Detailed cleaning to ensure the building is ready for immediate occupancy."
                     },
                     {
                         descriptionId: 3,
-                        descriptionText: "Services include dusting, vacuuming, glass cleaning, sanitizing workstations and touch points, and maintaining common areas such as kitchens and restrooms."
-                    },
-                    {
-                        descriptionId: 4,
-                        descriptionText: "Steam cleaning of carpets and upholstery as required."
-                    },
+                        descriptionText: "Services include window cleaning, dusting, mopping, and removing any construction materials."
+                    }
                 ]
             }
         ],
@@ -359,19 +335,15 @@ export const ServicesArray = [
                 optionContent: [
                     {
                         descriptionId: 1,
-                        descriptionText: "Regular office cleaning schedules to maintain a spotless working environment."
+                        descriptionText: "Safe and hygienic cleaning practices tailored to childcare centres."
                     },
                     {
                         descriptionId: 2,
-                        descriptionText: "Cleaning plans to fit the operational hours and specific needs of your office."
+                        descriptionText: "Use of non-toxic, child-safe cleaning products to ensure a healthy environment for children."
                     },
                     {
                         descriptionId: 3,
-                        descriptionText: "Services include dusting, vacuuming, glass cleaning, sanitizing workstations and touch points, and maintaining common areas such as kitchens and restrooms."
-                    },
-                    {
-                        descriptionId: 4,
-                        descriptionText: "Steam cleaning of carpets and upholstery as required."
+                        descriptionText: "Focus on sanitizing toys, play areas, and sleeping areas to maintain a germ-free space."
                     },
                 ]
             },
@@ -382,19 +354,19 @@ export const ServicesArray = [
                 optionContent: [
                     {
                         descriptionId: 1,
-                        descriptionText: "Regular office cleaning schedules to maintain a spotless working environment."
+                        descriptionText: "Daily cleaning schedules to maintain cleanliness throughout the school day."
                     },
                     {
                         descriptionId: 2,
-                        descriptionText: "Cleaning plans to fit the operational hours and specific needs of your office."
+                        descriptionText: "Special attention to high-touch areas such as door handles, desks, and restrooms to prevent the spread of germs."
                     },
                     {
                         descriptionId: 3,
-                        descriptionText: "Services include dusting, vacuuming, glass cleaning, sanitizing workstations and touch points, and maintaining common areas such as kitchens and restrooms."
+                        descriptionText: "Services include classroom cleaning, corridor maintenance, and sanitizing common areas like libraries and cafeterias."
                     },
                     {
                         descriptionId: 4,
-                        descriptionText: "Steam cleaning of carpets and upholstery as required."
+                        descriptionText: "Steam cleaning of carpets and upholstery as required"
                     },
                 ]
             },
@@ -405,15 +377,15 @@ export const ServicesArray = [
                 optionContent: [
                     {
                         descriptionId: 1,
-                        descriptionText: "Regular office cleaning schedules to maintain a spotless working environment."
+                        descriptionText: "Intensive cleaning services during school holidays to prepare the school for the new term."
                     },
                     {
                         descriptionId: 2,
-                        descriptionText: "Cleaning plans to fit the operational hours and specific needs of your office."
+                        descriptionText: "Deep cleaning of classrooms, administrative offices, and common areas."
                     },
                     {
                         descriptionId: 3,
-                        descriptionText: "Services include dusting, vacuuming, glass cleaning, sanitizing workstations and touch points, and maintaining common areas such as kitchens and restrooms."
+                        descriptionText: "Special projects such as carpet cleaning, window washing, and floor waxing to enhance the school’s appearance."
                     },
                     {
                         descriptionId: 4,
