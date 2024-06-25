@@ -9,6 +9,8 @@ import ServiceIntro from './ServiceIntro';
 // Components
 import Animations from './(components)/Animations';
 import Reviews from './Reviews';
+import Reputation from './Reputation';
+import ServiceOptions from './ServiceOptions';
 
 export default function page({params}: { params: { url: string } }) {
   
@@ -22,6 +24,8 @@ export default function page({params}: { params: { url: string } }) {
             <Animations />
         </section>
         <Reviews service={activeService} />
+        <Reputation />
+        <ServiceOptions service={activeService} />
     </div>
   )
 }

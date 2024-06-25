@@ -4,8 +4,6 @@ import React, { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 
-// Components
-import ServiceExplanation from './(components)/ServiceExplanation'
 
 // Assets
 import { ServicesArray } from './(constants)/services'
@@ -50,11 +48,7 @@ export default function What() {
                     </div>
                 )))}
             </section>
-        </article>
-        <article>
-            <ServiceExplanation service={currentService} />
-        </article>
-         
+        </article>         
   
     </main>
   )

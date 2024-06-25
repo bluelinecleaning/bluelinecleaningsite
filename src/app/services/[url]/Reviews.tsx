@@ -8,11 +8,9 @@ import Stars from '../../../../assets/services/stars.png'
 
 export default function Reviews({service}: any) {
   
-    console.log(service)
-  
     return (
     <article>
-        <div className="relative page h-screen">
+        <div className="relative page">
             <h2 className='mainTitle text-blueBranding font-bold '>What Our Customers Say</h2>
             <Image 
                 src={OpenQuotes}
@@ -26,6 +24,7 @@ export default function Reviews({service}: any) {
                 title='Close quotes icon'
                 alt='Close quotes icon'
             /> */}
+            {/* First review */}
             <div className="mt-[2rem] flex flex-col items-center gap-4 ">
                 <Image 
                     src={Stars}
@@ -39,7 +38,8 @@ export default function Reviews({service}: any) {
                     <p>{service.reviewer1Position}</p>
                 </div>
             </div>
-            <div className="mt-[4rem] flex flex-col items-center gap-4 ">
+            {/* Second review */}
+            <div className="mt-[2rem] flex flex-col items-center gap-4 ">
                 <Image 
                     src={Stars}
                     className='w-[5rem] opacity-80 '
