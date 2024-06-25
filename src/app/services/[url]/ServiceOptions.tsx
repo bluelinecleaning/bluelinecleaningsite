@@ -20,25 +20,25 @@ interface OptionContent {
 export default function ServiceOptions( {service}: any ) {
     
     return (
-    <article className='page'>
-        <div>
+    <article className='px-[1rem] py-[1rem] md:py-[5rem]'>
+        <div className='md:flex md:flex-wrap md:gap-4 lg:gap-0 md:justify-center '>
             {service.options.map((option: Option) => (
                 <section 
                     key={option.id}
-                    className='shadow-2xl my-[2rem] '
+                    className=' shadow-2xl my-[1rem] md:w-[25rem] lg:w-[20rem] md:mx-[1rem] 2xl:mx-[4rem] '
                 >
                     {/* Option title */}
-                    <div className="bg-blueBranding text-center text-white p-[1rem] ">
-                        <h3 className='text-[1.5rem]'>{option.optionTitle}</h3>
+                    <div className="bg-blueBranding md:min-h-[8rem] md:flex md:items-center md:justify-center text-center text-white p-[1rem] ">
+                        <h3 className='text-[1.5rem] md:text-[2rem] '>{option.optionTitle}</h3>
                     </div>
-                    <div className='px-[1rem] py-[1rem]'>
+                    <div className='px-[1rem] py-[1rem] lg:relative '>
                         {/* Price */}
                         <div className="text-blueBranding text-center ">
                             <p>start from</p>
                             <p className=''><span className='font-extrabold text-[2rem]'>${option.optionPrice}</span>/ph</p>
                         </div>
                         {/* Option explanation */}
-                        <ul className='mt-[1rem]'>
+                        <ul className='mt-[1rem] md:h-[18.44rem]'>
                             {option.optionContent.map((description) => (
                                 <li 
                                     key={description.descriptionId}
@@ -53,7 +53,7 @@ export default function ServiceOptions( {service}: any ) {
                         </ul>
 
                         {/* CTA */}
-                        <a href='tel:+61428994431' className='mt-[1rem] mx-auto flex items-center bg-blueBranding shadow-lg text-white py-2 px-4 rounded w-min lg:text-[1.5rem]'>
+                        <a href='tel:+61428994431' className='mt-[1rem] md:mt-[2rem] mx-auto flex items-center bg-blueBranding shadow-2xl text-white py-2 px-4 rounded w-min lg:text-[1.5rem] '>
                             <p>0428994431</p>
                         </a>
                         <div className="mt-[2rem] mb-[1rem] border border-blueBranding mx-auto w-[5rem] "></div>
