@@ -4,6 +4,9 @@ import Domestic from '../../../../assets/cleaning2.jpg'
 import Industrial from '../../../../assets/industrial.jpg'
 import School from '../../../../assets/cleaning4.jpg'
 
+// Service page hero
+import CommercialHero from '../../../../assets/commercial.jpg'
+
 // Stickers
 import CommercialSticker from '../../../../assets/damian.png'
 import IndustrialSticker from '../../../../assets/alex.png'
@@ -19,6 +22,7 @@ export const ServicesArray = [
         short: 'Let us take care of your commercial premises, from offices to medical facilities, we clean and disinfect those everyday areas at the most convinient time for your operations',
         url: 'commercial-cleaning-service',
         image: Commercial,
+        hero: CommercialHero,
         sticker: CommercialSticker,
         card: Todo,
         options: [
@@ -129,6 +133,7 @@ export const ServicesArray = [
         short: 'We go beyond factory house keeping activities, we commit to deliver a comprehensive risk assessment and a preventative cleaning schedule for your machines, equipment and facilities',
         url: 'industrial-cleaning-service',
         image: Industrial,
+        hero: Industrial,
         sticker: FloorSticker,
         card: Colors,
         options: [
@@ -223,6 +228,7 @@ export const ServicesArray = [
         short: 'Keeping your house tidy has never been easier, plus, we offer free linen for your bedrooms for the first 3 months',
         url: 'domestic-cleaning-service',
         image: Domestic,
+        hero: Domestic,
         sticker: DomesticSticker,
         card: Avaialability,
         options: [
@@ -242,6 +248,10 @@ export const ServicesArray = [
                     {
                         descriptionId: 3,
                         descriptionText: "Customizable cleaning plans to fit your household's needs."
+                    },
+                    {
+                        descriptionId: 4,
+                        descriptionText: "Steam cleaning of carpets and upholstery as required."
                     }
                 ]
             },
@@ -325,6 +335,7 @@ export const ServicesArray = [
         short: 'Beyond just tidying up, school cleaning is a key strategy for ensuring a safe and encouraging learning environment, sanitizing common areas and killing germs and bacterias that present a risk for our children.',
         url: 'school-cleaning-service',
         image: School,
+        hero: School,
         sticker: SchoolSticker,
         card: Music,
         options: [

@@ -8,7 +8,6 @@ import Features from './(components)/Features';
 import { ValuesArray } from './(constants)/Values';
 
 // Assets
-import Logo from '../../../assets/new_logo.png'
 import Charity from '../../../assets/charity.png'
 import SocialTraders from '../../../assets/socialTraders.png'
 
@@ -39,24 +38,24 @@ const Foundation = () => {
                 ))}
             </ul>
         </section>
-        <div className="sticky top-0 flex flex-col gap-[3rem] h-[66.6667vh] lg:h-[50vh] w-3/5 justify-center sm:items-end ">
-            <aside className=' relative aspect-square w-full sm:w-[16rem] lg:w-[22rem] rounded-2xl bg-gray-300 shadow-md shadow-gray-600'>
+        <div className="sticky top-0 flex flex-col gap-[3rem] h-[66.6667vh] lg:h-[50vh] w-3/5 justify-center sm:items-center ">
+            <aside className=' relative aspect-square w-full lg:w-[22rem] '>
                {ValuesArray.map(feature => (
                 <feature.card id={feature.id} key={feature.id} />
                ))}
             </aside>
         </div>
     </div>
-    <div className='-mt-[3rem] sm:-mt-[5rem] page flex gap-2 lg:gap-6 justify-center'>
+    <div className='mt-[2rem] sm:-mt-[3rem] lg:mt-0 page flex gap-2 lg:gap-6 justify-center'>
         <Image 
             src={Charity}
-            className='w-[6rem] lg:w-[8rem] h-[6rem] lg:h-[8rem]'
+            className='w-[6rem] h-[6rem] '
             title='Registered Charity Certificate'
             alt='Registered Charity Certificate'
         />
         <Image 
             src={SocialTraders}
-            className='w-[6rem] lg:w-[8rem] h-[6rem] lg:h-[8rem] object-cover'
+            className='w-[6rem] h-[6rem]  object-cover'
             title='Social Traders Certificate'
             alt='Social Traders Certificate'
         />

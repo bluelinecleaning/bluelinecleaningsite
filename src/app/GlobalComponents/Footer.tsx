@@ -27,7 +27,7 @@ export default function Footer() {
           <Link href={'https://au.linkedin.com/company/blueline-laundry-inc'} target='_blank'><svg className="h-8 md:w-10 w-8 md:h-10 bg-blueBranding text-white rounded-full p-1"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  strokeWidth="2"  strokeLinecap="round"  strokeLinejoin="round">  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />  <rect x="2" y="9" width="4" height="12" />  <circle cx="4" cy="4" r="2" /></svg></Link>
         </div>
         {/* Call button */}
-        <a href='tel:+61428994431' className='mt-[1rem] flex items-center gap-2 bg-blueBranding text-white py-2 lg:py-4 px-4 lg:px-8 rounded w-min mx-auto shadow-lg shadow-blueBranding hover:bg-white hover:text-blueBranding hover:font-bold ease-in-out duration-300'>
+        <a href='tel:+61428994431' className='mt-[1rem] flex items-center gap-2 bg-blueBranding text-white py-2 lg:py-4 px-4 lg:px-8 rounded w-min mx-auto shadow-lg shadow-blueBranding hover:bg-gray-300 hover:text-blueBranding hover:font-bold ease-in-out duration-300'>
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
             <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
           </svg>

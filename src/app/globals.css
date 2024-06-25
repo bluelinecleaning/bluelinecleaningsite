@@ -28,7 +28,7 @@ html {
 }
 
 .cardText {
-  @apply font-bold pl-[3.5rem] sm:pl-[5rem] pr-[0.5rem] sm:pr-[1rem] lg:px-2 lg:pt-[2rem] lg:text-center h-full flex items-center text-[0.975rem] sm:text-[1.2rem] lg:text-[1.8rem] leading-4 sm:leading-5 lg:leading-[2rem] text-gray-800;
+  @apply font-semibold px-[1rem] sm:px-[3rem] lg:px-2 lg:pt-[2rem] lg:text-center h-full flex items-center text-[1.2rem] sm:text-[1.2rem] lg:text-[1.8rem] leading-[1.2rem] sm:leading-5 lg:leading-[2rem] text-gray-700 text-center;
 }
 
 .cardLogo {
