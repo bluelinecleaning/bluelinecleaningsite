@@ -83,7 +83,7 @@ export default function Header() {
 
         {/* Nav bar mobile */}
         {mobileMenu && (
-          <div className={`bg-white -ml-4 sm:-ml-[2rem] md:-ml-[4rem] lg:-ml-[6rem] absolute z-50 page top-[4rem] md:top-[7rem] lg:top-[9.3rem] rounded-lg bg-primary border-b border-b-blueBranding shadow-2xl w-full flex flex-col justify-center origin-top ${mobileMenu === true ? 'animate-open-menu': 'animate-close-menu'} `}>
+          <div className={`bg-white -ml-4 sm:-ml-[2rem] md:-ml-[4rem] lg:-ml-[6rem] absolute z-50 page top-[4rem] md:top-[4rem] lg:top-[9.3rem] rounded-lg border-b border-b-blueBranding shadow-2xl w-full flex flex-col justify-center origin-top ${mobileMenu === true ? 'animate-open-menu': 'animate-close-menu'} `}>
             <nav className='py-[2rem] text-blueBranding'>
               <ul className='font-bold mb-8 lg:mb-[4rem] text-[1.2rem] lg:text-[1.8rem] flex flex-col gap-[0.5rem] lg:gap-[0.8rem]'>
                 <li onClick={() => toggleMenu()}><Link href={'/'}>HOME</Link></li>
