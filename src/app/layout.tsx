@@ -22,9 +22,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.bluelinecleaning.com.au'
   },
-  // icons: {
-  //   icon: '../../assets/logo3.svg',
-  // },
+  icons: {
+    icon: 'https://blueline-cleaning.s3.ap-southeast-2.amazonaws.com/logo3.svg',
+  },
   openGraph: {
     title: 'Blueline Cleaning',
     description: 'Registered charity organization that creates meaningful employment opportunities by providing cleaning services in Tasmania',
@@ -49,7 +49,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="../../assets/logo3.svg" sizes="any" />
+        <link rel="icon" href="https://blueline-cleaning.s3.ap-southeast-2.amazonaws.com/logo3.svg" sizes="any" />
         <link
           rel="icon"
           href="/icon?<generated>"
