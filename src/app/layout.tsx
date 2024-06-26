@@ -18,7 +18,27 @@ export const metadata: Metadata = {
     default: 'Blueline Cleaning',
     template: '%s - Blueline Cleaning'
   },
-  description: ""
+  description: "Registered charity organization that creates meaningful employment opportunities by providing cleaning services in Tasmania",
+  alternates: {
+    canonical: 'https://www.bluelinecleaning.com.au'
+  },
+  // icons: {
+  //   icon: '../../assets/logo3.svg',
+  // },
+  openGraph: {
+    title: 'Blueline Cleaning',
+    description: 'Registered charity organization that creates meaningful employment opportunities by providing cleaning services in Tasmania',
+    url: 'https://blueline-cleaning.s3.ap-southeast-2.amazonaws.com/logo3.svg',
+    type: 'website',
+    images: [
+      {
+        url: 'https://blueline-cleaning.s3.ap-southeast-2.amazonaws.com/logo3.svg'
+      },
+    ]
+  },
+  twitter: {
+    card: 'summary_large_image'
+  }
 };
 
 export default function RootLayout({
@@ -28,6 +48,21 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="../../assets/logo3.svg" sizes="any" />
+        <link
+          rel="icon"
+          href="/icon?<generated>"
+          type="image/<generated>"
+          sizes="<generated>"
+        />
+        <link
+          rel="apple-touch-icon"
+          href="/apple-icon?<generated>"
+          type="image/<generated>"
+          sizes="<generated>"
+        />
+      </head>
       <body className={`${inter.className} ${fira.variable}`}>
         <Header />
         {children}
