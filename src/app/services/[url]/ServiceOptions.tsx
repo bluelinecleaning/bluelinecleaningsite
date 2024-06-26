@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react'
 
 // Assets
@@ -25,7 +26,7 @@ export default function ServiceOptions( {service}: any ) {
             {service.options.map((option: Option) => (
                 <section 
                     key={option.id}
-                    className=' shadow-2xl my-[1rem] md:w-[25rem] lg:w-[20rem] md:mx-[1rem] 2xl:mx-[4rem] '
+                    className=' shadow-2xl my-[1rem] md:w-[22rem] lg:w-[20rem] md:mx-[1rem] 2xl:mx-[4rem] '
                 >
                     {/* Option title */}
                     <div className="bg-blueBranding md:min-h-[8rem] md:flex md:items-center md:justify-center text-center text-white p-[1rem] ">
@@ -53,9 +54,12 @@ export default function ServiceOptions( {service}: any ) {
                         </ul>
 
                         {/* CTA */}
-                        <a href='tel:+61428994431' className='mt-[1rem] md:mt-[2rem] mx-auto flex items-center bg-blueBranding shadow-2xl text-white py-2 px-4 rounded w-min lg:text-[1.5rem] '>
-                            <p>0428994431</p>
-                        </a>
+                        <Link 
+                            href={'/#contact'}
+                            className='mt-[1rem] md:mt-[2rem] lg:mt-[3rem] flex justify-center text-center bg-blueBranding text-white py-2 px-4 rounded mx-auto shadow-lg '
+                        >
+                            Book an Appointment
+                        </Link>
                         <div className="mt-[2rem] mb-[1rem] border border-blueBranding mx-auto w-[5rem] "></div>
                     </div>
                 </section>

@@ -13,8 +13,8 @@ export default function What() {
     const [currentService, setCurrentService] = useState<number>()
   
     return (
-    <main className='pt-[3rem] md:pt-[5rem] lg:pt-[8rem] w-full bg-gradient-to-r from-[#2896FC] to-[#0181AC]' id='what'>
-        <article className='px-[1rem] sm:px-[2rem]  md:px-[4rem] lg:px-[6rem] pb-[3rem] lg:pb-[8rem] fira'>
+    <main className='pt-[3rem] md:pt-[5rem] lg:pt-[8rem] w-full bg-gradient-to-b from-[#2896FC] to-[#0181AC]' id='what'>
+        <article className='px-[1rem] sm:px-[2rem] md:px-[4rem] lg:px-[6rem] pb-[3rem] lg:pb-[6rem] fira'>
             <h2 className='mainTitle text-white'>What We Do?</h2>
             {/* Text */}
             <div className="mt-[2rem] md:mt-[3rem] lg:mt-[6rem] flex flex-col gap-[1rem] text-white">

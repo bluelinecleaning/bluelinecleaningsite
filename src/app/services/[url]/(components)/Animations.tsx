@@ -7,6 +7,7 @@ import Image from 'next/image';
 import Calendar from '../../../../../assets/services/calendar.png'
 import People from '../../../../../assets/services/people.png'
 import Availability from '../../../../../assets/services/clock.png'
+import Monitor from '../../../../../assets/services/monitor.png'
 
 
 
@@ -19,7 +20,7 @@ export default function Animations() {
         <div className="w-[10rem] md:w-1/4 flex flex-col gap-2 mx-auto ">
             <Image 
                 src={Calendar}
-                className='h-[6rem] w-[6rem] mx-auto'
+                className='h-[4rem] w-[4rem] mx-auto'
                 title='Calendar icon'
                 alt='Calendar icon'
             />
@@ -29,7 +30,7 @@ export default function Animations() {
         <div className="w-[10rem] md:w-1/4 flex flex-col gap-2 mx-auto" >
             <Image 
                 src={People}
-                className='h-[6rem] w-[6rem] mx-auto'
+                className='h-[4rem] w-[4rem] mx-auto'
                 title='People icon'
                 alt='People icon'
             />
@@ -39,7 +40,7 @@ export default function Animations() {
         <div className="w-[10rem] md:w-1/4 flex flex-col gap-2 mx-auto" >
             <Image 
                 src={Availability}
-                className='h-[6rem] w-[6rem] mx-auto'
+                className='h-[4rem] w-[4rem] mx-auto'
                 title='People icon'
                 alt='People icon'
             />
@@ -47,9 +48,12 @@ export default function Animations() {
         </div>
 
         <div className="w-[10rem] md:w-1/4 flex flex-col gap-2 mx-auto" >
-            <svg className="h-[6rem] md:h-[6rem] w-[5rem] text-white mx-auto"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
-            </svg>
+            <Image 
+                src={Monitor}
+                className='h-[4rem] w-[4rem] mx-auto'
+                title='Monitor icon'
+                alt='Monitor icon'
+            />
 
             <h4>Online Reporting</h4>
         </div>

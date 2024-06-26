@@ -41,9 +41,9 @@ export default function Form() {
   })
 
   return (
-    <section className='px-[1rem] py-[3rem] sm:mx-auto sm:px-[2rem] md:px-[4rem] bg-blueBranding' id='contact' >
+    <section className='px-[1rem] py-[3rem] sm:mx-auto sm:px-[2rem] md:px-[4rem] lg:px-[8rem] bg-blueBranding' id='contact' >
         <form 
-          className='relative page border shadow-xl bg-gradient-to-tl from-gray-200 to-white lg:flex lg:gap-[4rem]  ' 
+          className='relative page lg:px-[4rem] border shadow-xl bg-gradient-to-tl from-gray-200 to-white lg:flex lg:gap-4 ' 
           onSubmit={formik.handleSubmit}
         >
           <div className="flex flex-col">
@@ -55,7 +55,7 @@ export default function Form() {
             />
 
           </div>
-          <div className="page flex flex-col gap-[1rem]">
+          <div className="page lg:px-[2rem] flex flex-col gap-[1rem]">
           <h3 className='font-bold text-center text-blueBranding text-[1.5rem] '>Get a quote</h3>
             {/* Firstname */}
             <label htmlFor="firstname" className='mt-[1rem] flex flex-col gap-[0.5rem]'>
