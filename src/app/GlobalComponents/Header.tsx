@@ -53,10 +53,10 @@ export default function Header() {
             </svg>
           ) : (
               <svg 
-                  onClick={() => {
-                      setServicesDisplay(false)
-                  }} 
-                  className="h-[2rem] w-[2.33rem] text-blueBranding"  fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                onClick={() => {
+                    setServicesDisplay(false)
+                }} 
+                className="h-[2rem] w-[2.33rem] text-blueBranding"  fill="none" viewBox="0 0 24 24" stroke="currentColor"
               >
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"/>
               </svg>
@@ -68,9 +68,9 @@ export default function Header() {
           <nav className='flex gap-[4rem]'>
             <ul className="flex justify-between items-center gap-[1rem] text-blueBranding font-bold text-[1rem] hover:cursor-pointer">
               <li className='hover:text-gray-400'><Link href={'/'}>HOME</Link></li>
-              <li className='hover:text-gray-400'>OUR CLEANING SERVICES</li>
-              <li className='hover:text-gray-400'>OUR PEOPLE</li>
-              <li className='hover:text-gray-400'>CONTACT</li>  
+              <li className='hover:text-gray-400'><Link href={'/#what'}>OUR CLEANING SERVICES</Link></li>
+              <li className='hover:text-gray-400'><Link href={'/#impact'}>OUR PEOPLE</Link></li>
+              <li className='hover:text-gray-400'><Link href={'/#contact'}>CONTACT</Link></li>  
             </ul>
             <a href='tel:+61428994431' className=' flex items-center gap-2 bg-blueBranding text-white py-2 px-4 rounded w-min ml-auto hover:bg-white hover:text-blueBranding hover:font-bold ease-in-out duration-300  '>
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
@@ -89,7 +89,7 @@ export default function Header() {
                 <li onClick={() => toggleMenu()}><Link href={'/'}>HOME</Link></li>
                 <li onClick={() => toggleMenu()}><Link href={'/#what'}>OUR CLEANING SERVICES</Link></li>
                 <li onClick={() => toggleMenu()}><Link href={'/#impact'}>OUR PEOPLE</Link></li>
-                <li onClick={() => toggleMenu()}>CONTACT</li>
+                <li onClick={() => toggleMenu()}><Link href={'/#contact'}>CONTACT</Link></li>
               </ul>
               <a href='tel:+61428994431' className=' mx-auto flex items-center gap-2 bg-blueBranding shadow-lg shadow-blueBranding text-white py-2 px-4 rounded w-min lg:text-[1.5rem]'>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">

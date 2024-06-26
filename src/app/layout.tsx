@@ -3,6 +3,7 @@ import { Fira_Sans, Inter } from "next/font/google";
 import "./globals.css";
 import Header from "./GlobalComponents/Header";
 import Footer from "./GlobalComponents/Footer";
+import Quality from "./(home)/Quality";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -30,6 +31,7 @@ export default function RootLayout({
       <body className={`${inter.className} ${fira.variable}`}>
         <Header />
         {children}
+        <Quality />
         <Footer />
       </body>
     </html>
