@@ -44,13 +44,13 @@ export default function Form() {
   return (
     <section className='px-[1rem] py-[3rem] sm:mx-auto sm:px-[2rem] md:px-[4rem] lg:px-[8rem] bg-blueBranding' id='contact' >
         <form 
-          className='relative page lg:px-[4rem] border shadow-xl bg-gradient-to-tl from-gray-200 to-white lg:flex ' 
+          className='relative page 2xl:w-3/4 2xl:mx-auto lg:px-[4rem] border shadow-xl bg-gradient-to-tl from-gray-200 to-white lg:flex ' 
           onSubmit={formik.handleSubmit}
         >
           <div className="lg:w-1/3 xl:w-1/4 flex flex-col justify-center items-center gap-[2rem]">
             <Image 
               src={Logo} 
-              className='h-[8rem] lg:h-[12rem] w-auto  '
+              className='h-[8rem] lg:h-[10rem] w-auto  '
               title='Blueline Logo'
               alt='Blueline Logo'
             />

@@ -19,7 +19,7 @@ export const ServicesArray = [
     {
         id: 1,
         title: 'Commercial Cleaning Service',
-        short: 'Let us take care of your commercial premises, from offices to medical facilities, we clean and disinfect those everyday areas at the most convinient time for your operations',
+        short: 'Let us take care of your commercial premises. From offices to healthcare or retail locations, we thoroughly clean and disinfect your space at the most convenient time for your operations.',
         url: 'commercial-cleaning-service',
         image: Commercial,
         hero: CommercialHero,
@@ -130,7 +130,7 @@ export const ServicesArray = [
     {
         id: 3,
         title: 'Industrial Cleaning Service',
-        short: 'We go beyond factory house keeping activities, we commit to deliver a comprehensive risk assessment and a preventative cleaning schedule for your machines, equipment and facilities',
+        short: 'Full suite of cleaning services including comprehensive risk assessments as required and a strategic approach to preventative cleaning of your machines, equipment and facilities.',
         url: 'industrial-cleaning-service',
         image: Industrial,
         hero: Industrial,
@@ -225,7 +225,7 @@ export const ServicesArray = [
     {
         id: 2,
         title: 'Domestic Cleaning Service',
-        short: 'Keeping your house tidy has never been easier, plus, we offer free linen for your bedrooms for the first 3 months',
+        short: 'Keeping your house tidy has never been easier. Let us keep your home spotless so you can rest easy, knowing you’re contributing to positive community outcomes.',
         url: 'domestic-cleaning-service',
         image: Domestic,
         hero: Domestic,
@@ -332,7 +332,7 @@ export const ServicesArray = [
     {
         id: 4,
         title: 'School Cleaning Service',
-        short: 'Beyond just tidying up, school cleaning is a key strategy for ensuring a safe and encouraging learning environment, sanitizing common areas and killing germs and bacterias that present a risk for our children.',
+        short: 'We ensure a clean, safe, and positive learning environment by keeping classrooms clean, sanitizing common areas and eliminating germs and bacteria that pose a risk to our children and our teachers.',
         url: 'school-cleaning-service',
         image: School,
         hero: School,
