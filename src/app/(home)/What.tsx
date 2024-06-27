@@ -32,7 +32,7 @@ export default function What() {
                             alt={`${service.title} service`}
                             className="h-[18rem] lg:h-[21rem] object-cover transition-transform group-hover:scale-125 lg:group-hover:scale-150  duration-500"
                         />
-                        <h3 className='py-1 lg:py-2 font-bold text-center text-blueBranding lg:text-[1.7rem] lg:leading-[1.9rem] '>{service.title}</h3>
+                        <h3 className='py-1 lg:py-2 2xl:pt-6 font-bold text-center text-blueBranding lg:text-[1.4rem] lg:leading-[1.6rem] '>{service.title}</h3>
                         <div className="absolute inset-0 flex items-end bg-gradient-to-b from-black/80 via-blueBranding/80 to-black/80 transition-transform transform translate-y-full group-hover:translate-y-0 duration-500">
                             <div className="p-4 text-white flex flex-col md:gap-2">
                                 <h3 className='font-bold text-[1.3rem] md:text-[1.5rem] 2xl:text-[1.8rem] md:leading-[1.7rem] 2xl:leading-[2rem]'>{service.title}</h3>
