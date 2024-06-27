@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 213 187">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient);
+        stroke-width: 0px;
+      }
+
+      .cls-3 {
+        fill: #0081aa;
+        font-family: FiraSans-BoldItalic, 'Fira Sans';
+        font-size: 23.47px;
+        font-style: italic;
+        font-weight: 700;
+      }
+
+      .cls-4 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-5 {
+        letter-spacing: 0em;
+      }
+
+      .cls-6 {
+        letter-spacing: -.02em;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="15.12" y1="94.74" x2="194.24" y2="94.74" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="1" stop-color="#0081aa" stop-opacity=".2"/>
+    </linearGradient>
+  </defs>
+  <circle class="cls-2" cx="104.68" cy="94.74" r="89.56"/>
+  <text class="cls-3" transform="translate(48.74 72)"><tspan x="0" y="0">Quali</tspan><tspan class="cls-5" x="55.83" y="0">t</tspan><tspan x="64.53" y="0">y</tspan><tspan x="0" y="28.16">E</tspan><tspan class="cls-1" x="12.13" y="28.16">x</tspan><tspan class="cls-6" x="23.56" y="28.16">c</tspan><tspan x="34.24" y="28.16">el</tspan><tspan class="cls-5" x="53.5" y="28.16">l</tspan><tspan x="60.15" y="28.16">en</tspan><tspan class="cls-4" x="85.98" y="28.16">c</tspan><tspan x="96.66" y="28.16">e</tspan></text>
+</svg>
