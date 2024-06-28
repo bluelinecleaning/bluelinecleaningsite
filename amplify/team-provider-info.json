@@ -15,7 +15,7 @@
       "function": {
         "handleGeneralQuotes": {
           "deploymentBucketName": "amplify-bluelinecleaning-dev-1a7dd-deployment",
-          "s3Key": "amplify-builds/handleGeneralQuotes-3576674863574e7a7239-build.zip"
+          "s3Key": "amplify-builds/handleGeneralQuotes-437a474b3761444b4f65-build.zip"
         }
       },
       "api": {
