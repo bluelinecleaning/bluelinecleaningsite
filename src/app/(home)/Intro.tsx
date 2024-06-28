@@ -8,6 +8,7 @@ import Iso1 from '../../../assets/iso-1.jpg'
 import Iso2 from '../../../assets/iso-2.jpg'
 import Charity from '../../../assets/charity.png'
 import Circles from '../../../assets/white_circles_logo.png'
+import Banners from '../../../assets/banner.png'
 
 export default function Intro() {
   return (
@@ -30,34 +31,18 @@ export default function Intro() {
         <div>
           <Image 
             src={WhiteLogo}
-            className='h-[6.5rem] lg:h-[8rem] w-auto'
+            className='h-[6.5rem] lg:h-[8rem] xl:h-[12rem] xl:mx-auto w-auto'
             title='Blueline Cleaning Logo'
             alt='Blueline Cleaning Logo'
           />
           <div className="mt-[1rem] md:mt-[3rem] flex gap-[2rem] lg:gap-[4rem] ">
-            <div className="flex flex-col gap-[1rem] w-2/5 lg:w-1/5 ">
-              {/* Logos */}
-              <div className="grid grid-cols-2 md:grid-cols-3 md:items-center gap-2 rounded-xl">
-                <Image 
-                  src={Iso1}
-                  className='w-[4rem] sm:w-[4.5rem] lg:w-[6rem] h-auto sm:mx-auto'
-                  title='ISO 14001 Certificate'
-                  alt='ISO 14001 Certification'
-                />
-                <Image 
-                  src={Iso2}
-                  className='w-[4rem] sm:w-[4.5rem] lg:w-[6rem] h-auto sm:mx-auto'
-                  title='ISO 9001 Certificate'
-                  alt='ISO 9001 Certification'
-                />
-                <Image 
-                  src={Charity}
-                  className='sm:mt-[1rem] lg:mt-0 w-[4rem] sm:w-[6rem] lg:w-[6rem] h-auto col-span-2 md:col-span-1 mx-auto'
-                  title='Registered Charity Certificate'
-                  alt='Registered Charity Certification'
-                />
-
-              </div>
+            <div className="flex flex-col justify-center items-center w-2/5 lg:w-1/5 ">
+              <Image 
+                src={Banners}
+                className='w-[10rem] sm:w-[12rem] lg:w-[16rem] h-auto '
+                title='Registered Charity Certificate'
+                alt='Registered Charity Certification'
+              />
             </div>
             {/* Text */}
             <div className="flex flex-col gap-[0.5rem] lg:gap-[1rem] text-white w-3/5">

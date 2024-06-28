@@ -21,12 +21,12 @@ interface OptionContent {
 export default function ServiceOptions( {service}: any ) {
     
     return (
-    <article className='px-[1rem] py-[1rem] md:py-[5rem]'>
+    <article className='px-[2rem] py-[1rem] sm:mx-auto sm:px-[8rem] md:px-[1rem] md:py-[5rem]'>
         <div className='md:flex md:flex-wrap md:gap-4 lg:gap-0 md:justify-center '>
             {service.options.map((option: Option) => (
                 <section 
                     key={option.id}
-                    className=' shadow-2xl my-[1rem] md:w-[22rem] lg:w-[20rem] md:mx-[1rem] 2xl:mx-[4rem] '
+                    className=' shadow-2xl my-[2rem] md:w-[22rem] lg:w-[20rem] md:mx-[1rem] 2xl:mx-[4rem] '
                 >
                     {/* Option title */}
                     <div className="bg-blueBranding md:min-h-[8rem] md:flex md:items-center md:justify-center text-center text-white p-[1rem] ">

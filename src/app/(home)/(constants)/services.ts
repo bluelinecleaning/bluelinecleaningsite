@@ -19,7 +19,7 @@ export const ServicesArray = [
     {
         id: 1,
         title: 'Commercial Cleaning Service',
-        short: 'Let us take care of your commercial premises, from offices to medical facilities, we clean and disinfect those everyday areas at the most convinient time for your operations',
+        short: 'Let us take care of your commercial premises. From offices to healthcare or retail locations, we thoroughly clean and disinfect your space at the most convenient time for your operations.',
         url: 'commercial-cleaning-service',
         image: Commercial,
         hero: CommercialHero,
@@ -121,7 +121,7 @@ export const ServicesArray = [
         ],
         description: "Blueline’s Commercial Cleaning services cater to a diverse range of needs of businesses and organizations. We understand the importance of maintaining a clean and healthy environment for employees, clients, work place safety and visitors. Our solutions are customizable to fit the unique requirements of different commercial spaces, ensuring thorough cleaning and sanitization.",
         review1: "From day one, Blueline have shown a commitment to quality assurance and flexibility to meet our varied requirements. Couldn’t speak more highly of our experience",
-        reviewer1: "Martin",
+        reviewer1: "Martin N.",
         reviewer1Position: "Schools Property Manager",
         review2: "It’s been a pleasure working with Blueline across our various office and facility network. They very quickly got up to speed and have proven a valubale asset to our overall businesses",
         reviewer2: "Sean",
@@ -130,7 +130,7 @@ export const ServicesArray = [
     {
         id: 3,
         title: 'Industrial Cleaning Service',
-        short: 'We go beyond factory house keeping activities, we commit to deliver a comprehensive risk assessment and a preventative cleaning schedule for your machines, equipment and facilities',
+        short: 'Full suite of cleaning services including comprehensive risk assessments as required and a strategic approach to preventative cleaning of your machines, equipment and facilities.',
         url: 'industrial-cleaning-service',
         image: Industrial,
         hero: Industrial,
@@ -215,8 +215,8 @@ export const ServicesArray = [
             }
         ],
         description: "Blueline’s Industrial Cleaning services meet the rigorous demands of industrial environments. We handle large-scale operations with specialized equipment and safety protocols to ensure facilities are clean, safe, and compliant with regulations.",
-        review1: "From day one, Blueline have shown a commitment to quality assurance and flexibility to meet our varied requirements. Couldn’t speak more highly of our experience",
-        reviewer1: "Martin",
+        review1: "I have been beyond impressed with the expertise and insight shown by Juan and the team in creating preventative and maintenance cleaning risk assessments and safe work protocols specifically for our site. The plant has never looked better, our risks of incidents are greatly reduced, and my upcoming conversation with our insurance broker will be far more comfortable. Thank you Blueline.",
+        reviewer1: "Martin O.",
         reviewer1Position: "Schools Property Manager",
         review2: "It’s been a pleasure working with Blueline across our various office and facility network. They very quickly got up to speed and have proven a valubale asset to our overall businesses",
         reviewer2: "Sean",
@@ -225,7 +225,7 @@ export const ServicesArray = [
     {
         id: 2,
         title: 'Domestic Cleaning Service',
-        short: 'Keeping your house tidy has never been easier, plus, we offer free linen for your bedrooms for the first 3 months',
+        short: 'Keeping your house tidy has never been easier. Let us keep your home spotless so you can rest easy, knowing you’re contributing to positive community outcomes.',
         url: 'domestic-cleaning-service',
         image: Domestic,
         hero: Domestic,
@@ -332,7 +332,7 @@ export const ServicesArray = [
     {
         id: 4,
         title: 'School Cleaning Service',
-        short: 'Beyond just tidying up, school cleaning is a key strategy for ensuring a safe and encouraging learning environment, sanitizing common areas and killing germs and bacterias that present a risk for our children.',
+        short: 'We ensure a clean, safe, and positive learning environment by keeping classrooms clean, sanitizing common areas and eliminating germs and bacteria that pose a risk to our children and our teachers.',
         url: 'school-cleaning-service',
         image: School,
         hero: School,

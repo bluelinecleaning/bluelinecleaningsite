@@ -1,0 +1,26 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-bluelinecleaning-dev-1a7dd-authRole",
+      "UnauthRoleArn": "arn:aws:iam::905418448416:role/amplify-bluelinecleaning-dev-1a7dd-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::905418448416:role/amplify-bluelinecleaning-dev-1a7dd-authRole",
+      "Region": "ap-southeast-2",
+      "DeploymentBucketName": "amplify-bluelinecleaning-dev-1a7dd-deployment",
+      "UnauthRoleName": "amplify-bluelinecleaning-dev-1a7dd-unauthRole",
+      "StackName": "amplify-bluelinecleaning-dev-1a7dd",
+      "StackId": "arn:aws:cloudformation:ap-southeast-2:905418448416:stack/amplify-bluelinecleaning-dev-1a7dd/9d2e1d40-3439-11ef-abd7-02d6b9d36157",
+      "AmplifyAppId": "d2cazdoh0ztxdl"
+    },
+    "categories": {
+      "function": {
+        "handleGeneralQuotes": {
+          "deploymentBucketName": "amplify-bluelinecleaning-dev-1a7dd-deployment",
+          "s3Key": "amplify-builds/handleGeneralQuotes-3576674863574e7a7239-build.zip"
+        }
+      },
+      "api": {
+        "generalQuotes": {}
+      }
+    }
+  }
+}

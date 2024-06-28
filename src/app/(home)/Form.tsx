@@ -7,6 +7,26 @@ import Image from 'next/image'
 
 // Assets
 import Logo from '../../../assets/blue-logo.png'
+import Indicate from '../../../assets/form-image.png'
+
+// Amplify configuration
+import config from '@/amplifyconfiguration.json'
+import { Amplify } from 'aws-amplify'
+import { post } from 'aws-amplify/api'
+
+// Api key
+const apiKey: string | undefined = process.env.NEXT_PUBLIC_API_KEY;
+
+Amplify.configure(config, {
+  API: {
+    REST: {
+      headers: async () => {
+        return { 'X-Api-Key': apiKey || '' };
+      }
+    }
+  }
+});
+
 
 export default function Form() {
   
@@ -36,27 +56,54 @@ export default function Form() {
       terms: Yup.array().required("Terms of service must be checked")
     }),
     onSubmit: async(values) => {
-      console.log('Form sent with: ', values)
+      try {
+        let resOperation = post({
+          apiName: 'generalQuotes',
+          path: '/create',
+          options: {
+            body: {
+              values
+            },
+            headers: {
+              Authorization: ""
+            }
+          }
+        })
+
+        if((await resOperation.response).statusCode == 200) {
+          console.log('sent to bk')
+        } else {
+          console.log('message not sent')
+        }
+      } catch (error) {
+        console.log(error)
+      }
     }
   })
 
   return (
     <section className='px-[1rem] py-[3rem] sm:mx-auto sm:px-[2rem] md:px-[4rem] lg:px-[8rem] bg-blueBranding' id='contact' >
         <form 
-          className='relative page lg:px-[4rem] border shadow-xl bg-gradient-to-tl from-gray-200 to-white lg:flex lg:gap-4 ' 
+          className='relative page 2xl:w-3/4 2xl:mx-auto lg:px-[4rem] border shadow-xl bg-gradient-to-tl from-gray-200 to-white lg:flex ' 
           onSubmit={formik.handleSubmit}
         >
-          <div className="flex flex-col">
+          <div className="lg:w-1/3 xl:w-1/4 flex flex-col justify-center items-center gap-[2rem]">
             <Image 
               src={Logo} 
-              className='h-[8rem] lg:h-[12rem] w-auto mx-auto lg:my-auto '
+              className='h-[8rem] lg:h-[10rem] w-auto  '
               title='Blueline Logo'
               alt='Blueline Logo'
             />
+            <Image 
+              src={Indicate}
+              className='hidden lg:block ml-[5rem] w-[25rem] opacity-80 '
+              title='Blueline worker'
+              alt='Blueline worker inviting to fill the form'
+            />
 
           </div>
-          <div className="page lg:px-[2rem] flex flex-col gap-[1rem]">
-          <h3 className='font-bold text-center text-blueBranding text-[1.5rem] '>Get a quote</h3>
+          <div className="page lg:px-0 flex flex-col gap-[1rem]">
+            <h3 className='font-bold text-center text-blueBranding text-[1.5rem] '>Get a quote</h3>
             {/* Firstname */}
             <label htmlFor="firstname" className='mt-[1rem] flex flex-col gap-[0.5rem]'>
               <span className={`${formik.touched.firstname && formik.errors.firstname ? 'text-red-400' : 'text-blueBranding'}`}>
@@ -121,7 +168,7 @@ export default function Form() {
             <label htmlFor="service" className='flex flex-col gap-[0.5rem]'>
                 <span className='text-blueBranding'>Service type</span>
                   <div className=''>
-                    <select name="service" value={formik.values.service} onChange={formik.handleChange} className=' rounded w-full px-0 text-black'>
+                    <select name="service " value={formik.values.service} onChange={formik.handleChange} className='bg-transparent rounded w-full px-0 text-black'>
                       <option className='w-[8rem]' >Commercial cleaning</option>
                       <option className='w-[8rem]'> Industrial cleaning</option>
                       <option className='w-[8rem]'>Factory cleaning</option>
@@ -136,7 +183,7 @@ export default function Form() {
               <span className={`${formik.touched.description && formik.errors.description ? 'text-red-400' : 'text-blueBranding'}`}>
                   {formik.touched.description && formik.errors.description 
                     ? formik.errors.description 
-                    : 'Project description'
+                    : 'Service description'
                   }
               </span>
               <textarea 
@@ -161,7 +208,7 @@ export default function Form() {
                     onChange={formik.handleChange} 
                     className='' 
                 />
-                <p className='text-black text-[0.7rem] md:text-[0.8rem]'>I consent to be contacted by Bytecho in response to the information provided in this form.</p>
+                <p className='text-black text-[0.7rem] md:text-[0.8rem]'>I consent to be contacted by Blueline in response to the information provided in this form.</p>
               </div>
             </label>
 
