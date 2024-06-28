@@ -5,6 +5,9 @@ import Header from "./GlobalComponents/Header";
 import Footer from "./GlobalComponents/Footer";
 import Quality from "./(home)/Quality";
 
+// Amplify
+import ConfigureAmplifyClientSide from "./ConfigureAmplifyClientSide";
+
 const inter = Inter({ subsets: ["latin"] });
 
 const fira = Fira_Sans({
@@ -64,10 +67,13 @@ export default function RootLayout({
         />
       </head>
       <body className={`${inter.className} ${fira.variable}`}>
-        <Header />
-        {children}
-        <Quality />
-        <Footer />
+        <>
+          <ConfigureAmplifyClientSide />
+          <Header />
+          {children}
+          <Quality />
+          <Footer />
+        </>
       </body>
     </html>
   );

@@ -1,0 +1,10 @@
+{
+  "aws_project_region": "ap-southeast-2",
+  "aws_cloud_logic_custom": [
+    {
+      "name": "generalQuotes",
+      "endpoint": "https://voijknjbmf.execute-api.ap-southeast-2.amazonaws.com/dev",
+      "region": "ap-southeast-2"
+    }
+  ]
+}

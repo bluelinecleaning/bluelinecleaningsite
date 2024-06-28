@@ -12,9 +12,9 @@ export default function Reviews({service}: any) {
             <div className='py-[2rem]'>
                 <h2 className='mainTitle text-blueBranding font-bold'>What Our Customers Say</h2>
                 
-                <div className='mt-[1rem] md:mt-[4rem] md:flex md:gap-[8rem]'>
+                <div className='mt-[1rem] md:mt-[4rem] md:flex md:justify-center md:gap-[8rem]'>
                     {/* First review */}
-                    <div className="flex flex-col items-center gap-4 ">
+                    <div className="md:w-1/3 flex flex-col items-center gap-4 ">
                         <Image 
                             src={Stars}
                             className='w-[5rem] opacity-80 '
@@ -32,7 +32,7 @@ export default function Reviews({service}: any) {
                     <div className="md:hidden my-[2rem] mx-auto h-[0.05rem] w-2/3 bg-gradient-to-r from-blueBranding via-gray-200 to-blueBranding  "></div>
                     
                     {/* Second review */}
-                    <div className="flex flex-col items-center gap-4 ">
+                    <div className="md:w-1/3 flex flex-col items-center gap-4 ">
                         <Image 
                             src={Stars}
                             className='w-[5rem] opacity-80 '

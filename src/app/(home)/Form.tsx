@@ -9,6 +9,25 @@ import Image from 'next/image'
 import Logo from '../../../assets/blue-logo.png'
 import Indicate from '../../../assets/form-image.png'
 
+// Amplify configuration
+import config from '@/amplifyconfiguration.json'
+import { Amplify } from 'aws-amplify'
+import { post } from 'aws-amplify/api'
+
+// Api key
+const apiKey: string | undefined = process.env.NEXT_PUBLIC_API_KEY;
+
+Amplify.configure(config, {
+  API: {
+    REST: {
+      headers: async () => {
+        return { 'X-Api-Key': apiKey || '' };
+      }
+    }
+  }
+});
+
+
 export default function Form() {
   
   // Functions
@@ -37,7 +56,28 @@ export default function Form() {
       terms: Yup.array().required("Terms of service must be checked")
     }),
     onSubmit: async(values) => {
-      console.log('Form sent with: ', values)
+      try {
+        let resOperation = post({
+          apiName: 'generalQuotes',
+          path: '/create',
+          options: {
+            body: {
+              values
+            },
+            headers: {
+              Authorization: ""
+            }
+          }
+        })
+
+        if((await resOperation.response).statusCode == 200) {
+          console.log('sent to bk')
+        } else {
+          console.log('message not sent')
+        }
+      } catch (error) {
+        console.log(error)
+      }
     }
   })
 
