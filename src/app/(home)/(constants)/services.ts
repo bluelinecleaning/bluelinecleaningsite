@@ -9,7 +9,6 @@ import CommercialHero from '../../../../assets/commercial.jpg'
 
 // Stickers
 import CommercialSticker from '../../../../assets/damian.png'
-import IndustrialSticker from '../../../../assets/alex.png'
 import DomesticSticker from '../../../../assets/Tsega.png'
 import FloorSticker from '../../../../assets/Glenda.png'
 import SchoolSticker from '../../../../assets/james.png'
