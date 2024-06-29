@@ -31,7 +31,7 @@ export default function Header() {
   return (
     <header className={`fixed lg:sticky z-50 opacity-95 bg-white w-full rounded-b-lg ${mobileMenu === false ? 'shadow-2xl border-b border-blueBranding': ''}`}>
       <div className='fira px-[1rem] py-[1rem] sm:mx-auto sm:px-[2rem] md:px-[4rem] lg:px-[6rem] flex items-center lg:justify-between'>
-        <Link href='/'>
+        <Link href='/' onClick={() => setMobileMenu(false)} >
           <Image 
             className='w-[7rem] md:object-cover'
             src={Logo}
