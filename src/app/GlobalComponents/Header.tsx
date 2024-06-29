@@ -31,7 +31,7 @@ export default function Header() {
   return (
     <header className={`fixed lg:sticky z-50 opacity-95 bg-white w-full rounded-b-lg ${mobileMenu === false ? 'shadow-2xl border-b border-blueBranding': ''}`}>
       <div className='fira px-[1rem] py-[1rem] sm:mx-auto sm:px-[2rem] md:px-[4rem] lg:px-[6rem] flex items-center lg:justify-between'>
-        <Link href='/'>
+        <Link href='/' onClick={() => setMobileMenu(false)} >
           <Image 
             className='w-[7rem] md:object-cover'
             src={Logo}
@@ -68,7 +68,7 @@ export default function Header() {
           <nav className='flex gap-[4rem]'>
             <ul className="flex justify-between items-center gap-[1rem] text-blueBranding font-bold text-[1rem] hover:cursor-pointer">
               <li className='hover:text-gray-400'><Link href={'/'}>HOME</Link></li>
-              <li className='hover:text-gray-400'><Link href={'/#what'}>OUR CLEANING SERVICES</Link></li>
+              <li className='hover:text-gray-400'><Link href={'/#what'}>SERVICES</Link></li>
               <li className='hover:text-gray-400'><Link href={'/#impact'}>OUR PEOPLE</Link></li>
               <li className='hover:text-gray-400'><Link href={'/#contact'}>CONTACT</Link></li>  
             </ul>
@@ -87,7 +87,7 @@ export default function Header() {
             <nav className='py-[2rem] text-blueBranding'>
               <ul className='font-bold mb-8 lg:mb-[4rem] text-[1.2rem] lg:text-[1.8rem] flex flex-col gap-[0.5rem] lg:gap-[0.8rem]'>
                 <li onClick={() => toggleMenu()}><Link href={'/'}>HOME</Link></li>
-                <li onClick={() => toggleMenu()}><Link href={'/#what'}>OUR CLEANING SERVICES</Link></li>
+                <li onClick={() => toggleMenu()}><Link href={'/#what'}>SERVICES</Link></li>
                 <li onClick={() => toggleMenu()}><Link href={'/#impact'}>OUR PEOPLE</Link></li>
                 <li onClick={() => toggleMenu()}><Link href={'/#contact'}>CONTACT</Link></li>
               </ul>

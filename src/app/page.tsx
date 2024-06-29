@@ -7,7 +7,7 @@ import What from "./(home)/What";
 
 export default function Home() {
   return (
-    <div className="fira pt-[8rem] lg:pt-0 min-h-screen ">
+    <div className="fira pt-[6rem] lg:pt-0 min-h-screen ">
       <Intro />
       <What />
       <Impact />
