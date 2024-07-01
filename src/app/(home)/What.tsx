@@ -7,7 +7,6 @@ import Link from 'next/link'
 
 // Assets
 import { ServicesArray } from './(constants)/services'
-import Arrow from '../../../assets/down-arrow.png'
 
 export default function What() {
   

@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     default: 'Blueline Cleaning',
     template: '%s - Blueline Cleaning'
   },
-  description: "Registered charity organization that creates meaningful employment opportunities by providing cleaning services in Tasmania",
+  description: "Registered charity organization that creates meaningful employment opportunities by providing commercial, industrial and production cleaning services in Tasmania",
   alternates: {
     canonical: 'https://www.bluelinecleaning.com.au'
   },
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: 'Blueline Cleaning',
-    description: 'Registered charity organization that creates meaningful employment opportunities by providing cleaning services in Tasmania',
+    description: 'Registered charity organization that creates meaningful employment opportunities by providing commercial, industrial and production cleaning services in Tasmania',
     url: 'https://blueline-cleaning.s3.ap-southeast-2.amazonaws.com/logo3.svg',
     type: 'website',
     images: [
