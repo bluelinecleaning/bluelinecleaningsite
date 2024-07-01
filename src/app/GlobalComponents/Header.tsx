@@ -69,6 +69,7 @@ export default function Header() {
             <ul className="flex justify-between items-center gap-[1rem] text-blueBranding font-bold text-[1rem] hover:cursor-pointer">
               <li className='hover:text-gray-400'><Link href={'/'}>HOME</Link></li>
               <li className='hover:text-gray-400'><Link href={'/#what'}>SERVICES</Link></li>
+              <li className='hover:text-gray-400'><Link href={'https://www.blueline-laundry.com/'} target='_blank'>LAUNDRY</Link></li>
               <li className='hover:text-gray-400'><Link href={'/#impact'}>OUR PEOPLE</Link></li>
               <li className='hover:text-gray-400'><Link href={'/#contact'}>CONTACT</Link></li>  
             </ul>
@@ -88,6 +89,7 @@ export default function Header() {
               <ul className='font-bold mb-8 lg:mb-[4rem] text-[1.2rem] lg:text-[1.8rem] flex flex-col gap-[0.5rem] lg:gap-[0.8rem]'>
                 <li onClick={() => toggleMenu()}><Link href={'/'}>HOME</Link></li>
                 <li onClick={() => toggleMenu()}><Link href={'/#what'}>SERVICES</Link></li>
+                <li className='hover:text-gray-400'><Link href={'https://www.blueline-laundry.com/'} target='_blank'>LAUNDRY</Link></li>
                 <li onClick={() => toggleMenu()}><Link href={'/#impact'}>OUR PEOPLE</Link></li>
                 <li onClick={() => toggleMenu()}><Link href={'/#contact'}>CONTACT</Link></li>
               </ul>

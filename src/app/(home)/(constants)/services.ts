@@ -3,6 +3,7 @@ import Commercial from '../../../../assets/cleaning5.jpg'
 import Domestic from '../../../../assets/cleaning2.jpg'
 import Industrial from '../../../../assets/industrial.jpg'
 import School from '../../../../assets/cleaning4.jpg'
+import Laundry from '../../../../assets/laundry-service.jpg'
 
 // Service page hero
 import CommercialHero from '../../../../assets/commercial.jpg'
@@ -128,9 +129,9 @@ export const ServicesArray = [
     },
     {
         id: 3,
-        title: 'Industrial Cleaning Service',
+        title: 'Industrial / Production Cleaning Service',
         short: 'Full suite of cleaning services including comprehensive risk assessments as required and a strategic approach to preventative cleaning of your machines, equipment and facilities.',
-        url: 'industrial-cleaning-service',
+        url: 'industrial-production-cleaning-service',
         image: Industrial,
         hero: Industrial,
         sticker: FloorSticker,
@@ -175,6 +176,29 @@ export const ServicesArray = [
                 ]
             },
             {
+                id: 4,
+                optionTitle: "Production Cleaning",
+                optionPrice: 45,
+                optionContent: [
+                    {
+                        descriptionId: 1,
+                        descriptionText: "Regular cleaning schedules to keep production facilities in optimal condition."
+                    },
+                    {
+                        descriptionId: 2,
+                        descriptionText: "Preventative maintenance regimes to ensure the efficiency of your machinery."
+                    },
+                    {
+                        descriptionId: 3,
+                        descriptionText: "Tailored cleaning measures to prolong the life of equipment and infrastructure."
+                    },
+                    {
+                        descriptionId: 4,
+                        descriptionText: "Services include floor cleaning, equipment cleaning, and general maintenance tasks."
+                    }
+                ]
+            },
+            {
                 id: 3,
                 optionTitle: "End of Build",
                 optionPrice: 45,
@@ -193,27 +217,9 @@ export const ServicesArray = [
                     }
                 ]
             },
-            {
-                id: 4,
-                optionTitle: "Maintenance Cleaning",
-                optionPrice: 45,
-                optionContent: [
-                    {
-                        descriptionId: 1,
-                        descriptionText: "Regular maintenance cleaning schedules to keep industrial facilities in optimal condition."
-                    },
-                    {
-                        descriptionId: 2,
-                        descriptionText: "Preventative cleaning measures to prolong the life of equipment and infrastructure."
-                    },
-                    {
-                        descriptionId: 3,
-                        descriptionText: "Services include floor cleaning, equipment cleaning, and general maintenance tasks."
-                    }
-                ]
-            }
+            
         ],
-        description: "Blueline’s Industrial Cleaning services meet the rigorous demands of industrial environments. We handle large-scale operations with specialized equipment and safety protocols to ensure facilities are clean, safe, and compliant with regulations.",
+        description: "Blueline’s Industrial / Production Cleaning and Preventative Maintenance services meet the rigorous demands of industrial environments. We handle large-scale operations with specialized equipment and safety protocols to ensure facilities are clean, safe, and compliant with regulations.",
         review1: "I have been beyond impressed with the expertise and insight shown by Juan and the team in creating preventative and maintenance cleaning risk assessments and safe work protocols specifically for our site. The plant has never looked better, our risks of incidents are greatly reduced, and my upcoming conversation with our insurance broker will be far more comfortable. Thank you Blueline.",
         reviewer1: "Martin O.",
         reviewer1Position: "Schools Property Manager",
@@ -334,6 +340,90 @@ export const ServicesArray = [
         short: 'We ensure a clean, safe, and positive learning environment by keeping classrooms clean, sanitizing common areas and eliminating germs and bacteria that pose a risk to our children and our teachers.',
         url: 'school-cleaning-service',
         image: School,
+        hero: School,
+        sticker: SchoolSticker,
+        card: Music,
+        options: [
+            {
+                id: 1,
+                optionTitle: "Child Care Centre Cleaning",
+                optionPrice: 45,
+                optionContent: [
+                    {
+                        descriptionId: 1,
+                        descriptionText: "Safe and hygienic cleaning practices tailored to childcare centres."
+                    },
+                    {
+                        descriptionId: 2,
+                        descriptionText: "Use of non-toxic, child-safe cleaning products to ensure a healthy environment for children."
+                    },
+                    {
+                        descriptionId: 3,
+                        descriptionText: "Focus on sanitizing toys, play areas, and sleeping areas to maintain a germ-free space."
+                    },
+                ]
+            },
+            {
+                id: 2,
+                optionTitle: "School Cleaning",
+                optionPrice: 45,
+                optionContent: [
+                    {
+                        descriptionId: 1,
+                        descriptionText: "Daily cleaning schedules to maintain cleanliness throughout the school day."
+                    },
+                    {
+                        descriptionId: 2,
+                        descriptionText: "Special attention to high-touch areas such as door handles, desks, and restrooms to prevent the spread of germs."
+                    },
+                    {
+                        descriptionId: 3,
+                        descriptionText: "Services include classroom cleaning, corridor maintenance, and sanitizing common areas like libraries and cafeterias."
+                    },
+                    {
+                        descriptionId: 4,
+                        descriptionText: "Steam cleaning of carpets and upholstery as required"
+                    },
+                ]
+            },
+            {
+                id: 3,
+                optionTitle: "School Holidays Cleaning",
+                optionPrice: 45,
+                optionContent: [
+                    {
+                        descriptionId: 1,
+                        descriptionText: "Intensive cleaning services during school holidays to prepare the school for the new term."
+                    },
+                    {
+                        descriptionId: 2,
+                        descriptionText: "Deep cleaning of classrooms, administrative offices, and common areas."
+                    },
+                    {
+                        descriptionId: 3,
+                        descriptionText: "Special projects such as carpet cleaning, window washing, and floor waxing to enhance the school’s appearance."
+                    },
+                    {
+                        descriptionId: 4,
+                        descriptionText: "Steam cleaning of carpets and upholstery as required."
+                    },
+                ]
+            }
+        ],
+        description: "Blueline’s School Cleaning services create safe and clean learning environments for students and staff. We accommodate the specific needs of schools, childcares, and educational institutions, ensuring high hygiene standards.",
+        review1: "From day one, Blueline have shown a commitment to quality assurance and flexibility to meet our varied requirements. Couldn’t speak more highly of our experience",
+        reviewer1: "Martin",
+        reviewer1Position: "Schools Property Manager",
+        review2: "It’s been a pleasure working with Blueline across our various office and facility network. They very quickly got up to speed and have proven a valubale asset to our overall businesses",
+        reviewer2: "Sean",
+        reviewer2Position: "Property and Fleet Manager",
+    },
+    {
+        id: 5,
+        title: 'Laundry Services',
+        short: "Tasmanian's leading commercial laundry providing the highest standards in large volume for healthcare, aged care, hospitality industries and more.",
+        url: 'https://www.blueline-laundry.com/what-we-do',
+        image: Laundry,
         hero: School,
         sticker: SchoolSticker,
         card: Music,

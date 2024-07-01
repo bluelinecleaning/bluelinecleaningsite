@@ -226,7 +226,7 @@ export default function Form() {
                   <select name="service" value={formik.values.service} onChange={formik.handleChange} className='bg-transparent rounded w-full px-0 text-black'>
                     <option className='w-[8rem]' >Commercial cleaning</option>
                     <option className='w-[8rem]'> Industrial cleaning</option>
-                    <option className='w-[8rem]'>Factory cleaning</option>
+                    <option className='w-[8rem]'>Production cleaning</option>
                     <option className='w-[8rem]'>Domestic cleaning</option>
                     <option className='w-[8rem]'>School cleaning</option>
                   </select>

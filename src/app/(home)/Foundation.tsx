@@ -9,8 +9,6 @@ import Features from './(components)/Features';
 import { ValuesArray } from './(constants)/Values';
 
 // Assets
-import Charity from '../../../assets/charity.png'
-import SocialTraders from '../../../assets/socialTraders.png'
 import Mock1 from "../../../assets/mock-image-1.jpg"
 import Mock2 from '../../../assets/values-hero.jpg'
 
@@ -63,20 +61,7 @@ const Foundation = () => {
             </aside>
         </div>
     </div>
-    {/* <div className='mt-[2rem] sm:-mt-[3rem] lg:mt-0 page flex gap-2 lg:gap-6 justify-center'>
-        <Image 
-            src={Charity}
-            className='w-[6rem] h-[6rem] '
-            title='Registered Charity Certificate'
-            alt='Registered Charity Certificate'
-        />
-        <Image 
-            src={SocialTraders}
-            className='w-[6rem] h-[6rem]  object-cover'
-            title='Social Traders Certificate'
-            alt='Social Traders Certificate'
-        />
-    </div> */}
+    
   </article>
   );
 };

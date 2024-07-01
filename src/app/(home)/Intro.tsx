@@ -4,7 +4,6 @@ import Image from 'next/image'
 // Assets
 import WhiteLogo from '../../../assets/new_logo.png'
 import Hero from '../../../assets/groupal.jpg'
-import Circles from '../../../assets/white_circles_logo.png'
 import Banners from '../../../assets/banner.png'
 
 export default function Intro() {
@@ -62,12 +61,6 @@ export default function Intro() {
         </div>
        
       </section>
-        <Image 
-          src={Circles} 
-          className='hidden lg:flex absolute bottom-0 right-0 opacity-55 lg:w-[10rem]'
-          title='Blueline Branding'
-          alt='Blueline logo'
-        />
     </article>
   )
 }
