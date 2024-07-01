@@ -30,7 +30,6 @@ function FeatureCard({ gradient, children, id }: FeatureCardProps) {
         inViewFeature === id ? "opacity-100" : "opacity-0"
     )}>
         {children}
-        {/* <button className='bg-black text-white rounded-xl absolute bottom-2 right-2 text-xs px-2 py-1 shadow-lg '>Show me</button> */}
     </div>
   )
 }
@@ -43,7 +42,7 @@ export const Todo = ({id}: CardProps) => {
             <div className="flex justify-center ">
                 <Image 
                     src={Alex}
-                    className='absolute -top-[8rem] sm:-top-[5rem] md:top-0 lg:-top-[5rem] opacity-15 object-cover w-[12.2rem] lg:w-[15rem] sm:mx-auto '
+                    className='absolute -top-[8rem] sm:-top-[5rem] md:top-0 lg:-top-[5rem] opacity-35 object-cover w-[12.2rem] lg:w-[15rem] sm:mx-auto '
                     title='NDIS participant working'
                     alt="Photo of an NDIS participant Blueline's worker"
                 />
@@ -60,7 +59,7 @@ export const Colors = ({id}: CardProps) => {
             <div className="flex justify-center ">
                 <Image 
                     src={Tsega}
-                    className='absolute -top-[8rem] sm:-top-[4rem] md:top-0 opacity-15 object-cover w-[12.2rem] sm:w-[13rem] sm:mx-auto '
+                    className='absolute -top-[8rem] sm:-top-[4rem] md:top-0 opacity-35 object-cover w-[12.2rem] sm:w-[13rem] sm:mx-auto '
                     title='NDIS participant working'
                     alt="Photo of an NDIS participant Blueline's worker"
                 />
@@ -78,7 +77,7 @@ export const Avaialability = ({id}: CardProps) => {
             <div className="flex justify-center ">
                 <Image 
                     src={James}
-                    className='absolute -top-[5rem] sm:-top-[3rem] md:top-0 opacity-15 object-cover w-[10rem] lg:w-[11rem] sm:mx-auto '
+                    className='absolute -top-[5rem] sm:-top-[3rem] md:top-0 opacity-35 object-cover w-[10rem] lg:w-[11rem] sm:mx-auto '
                     title='NDIS participant working'
                     alt="Photo of an NDIS participant Blueline's worker"
                 />
@@ -96,7 +95,7 @@ export const Music = ({id}: CardProps) => {
             <div className="flex justify-center ">
                 <Image 
                     src={Damian}
-                    className='absolute -top-[5rem] sm:bottom-0 md:top-0 lg:-top-[5rem] opacity-15 object-cover w-[8.3rem] lg:w-[10rem] sm:mx-auto lg:mx-0  '
+                    className='absolute -top-[5rem] sm:bottom-0 md:top-0 lg:-top-[5rem] opacity-35 object-cover w-[8.3rem] lg:w-[10rem] sm:mx-auto lg:mx-0  '
                     title='NDIS participant working'
                     alt="Photo of an NDIS participant Blueline's worker"
                 />
@@ -110,11 +109,11 @@ export const Safety = ({id} : CardProps) => {
     return (
         <FeatureCard id={id} gradient=''>
           
-            <p className='cardText lg:pt-[5rem]'>Everyone gets an equal opportunity to learn and try new things, and develop their skills</p>
+            <p className='cardText lg:pt-[5rem]  '>Everyone gets an equal opportunity to learn and try new things, and develop their skills</p>
             <div className="flex justify-center ">
                 <Image 
                     src={Andrew}
-                    className='absolute -top-[5rem] sm:top-0 md:top-4 lg:-top-[3rem] opacity-15 object-cover w-[8rem] lg:w-[9rem] sm:mx-auto '
+                    className='absolute -top-[5rem] sm:top-0 md:top-4 lg:-top-[3rem] opacity-35 object-cover w-[8rem] lg:w-[9rem] sm:mx-auto '
                     title='NDIS participant working'
                     alt="Photo of an NDIS participant Blueline's worker"
                 />

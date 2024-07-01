@@ -35,7 +35,7 @@ export default function ServiceIntro( {service}: any) {
         <div> 
             {/* Text */}
             <div className="flex flex-col gap-[0.5rem] md:gap-[2rem] text-white w-full">
-              <h1 className='font-bold text-[1.8rem] md:text-[3rem] lg:text-[4rem] leading-[2rem] md:leading-[3rem] text-center '>{service.title}</h1>
+              <h1 className='font-bold text-[1.8rem] md:text-[3rem] lg:text-[4rem] leading-[2rem] md:leading-[3rem] lg:leading-[4rem] text-center '>{service.title}</h1>
               <div className="mt-[2rem] flex flex-col gap-2">
                 <p className='md:text-[1.5rem] md:leading-[1.8rem] lg:px-[4rem] lg:mx-auto lg:text-center '>{service.description}</p>
               </div>
