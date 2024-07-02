@@ -11,6 +11,7 @@ import Animations from './(components)/Animations';
 import Reviews from './Reviews';
 import Reputation from './Reputation';
 import ServiceOptions from './ServiceOptions';
+import NotFound from '@/app/not-found';
 
 
 
@@ -106,13 +107,21 @@ export default function page({params}: { params: { url: string } }) {
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(breadCrumbData)}}
             />
 
-            <ServiceIntro service={activeService} />
-            <section className='bg-[#007FA3] page'>
-                <Animations />
-            </section>
-            <Reviews service={activeService} />
-            <Reputation />
-            <ServiceOptions service={activeService} />
+            {activeService ? (
+                <div>
+                    <ServiceIntro service={activeService} />
+                    <section className='bg-[#007FA3] page'>
+                        <Animations />
+                    </section>
+                    <Reviews service={activeService} />
+                    <Reputation />
+                    <ServiceOptions service={activeService} />
+                </div>
+            ) : (
+                <div>
+                    <NotFound />
+                </div>
+            )}
         </div>
     )
 }

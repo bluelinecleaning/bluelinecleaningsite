@@ -26,7 +26,7 @@ export default function Impact() {
         <Image 
           src={BiggerTeam}
           quality={100}
-          className='hidden lg:block w-full h-[40rem] object-cover object-top'
+          className='hidden lg:block w-full h-[30rem] object-cover object-top'
           title='Blueline Cleaning Team'
           alt='Blueline Cleaning Team'
         />
