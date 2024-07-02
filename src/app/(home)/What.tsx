@@ -25,10 +25,10 @@ export default function What() {
             
             {/* Cards */}
             <section className='mt-[2rem] md:mt-[4rem] lg:mt-[6rem] 2xl:w-3/4 2xl:mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-[2rem]'>
-                {ServicesArray.map((service => (
+                {ServicesArray.map(((service, index) => (
                    <div 
                         key={service.id}
-                        className='h-[20rem] lg:h-[26rem] mx-auto bg-white relative max-w-xs overflow-hidden border border-gray-300 shadow-gray-600 shadow-xl group'
+                        className={`h-[20rem] lg:h-[26rem] mx-auto bg-white relative max-w-xs overflow-hidden border border-gray-300 shadow-gray-600 shadow-xl group ${index === 4 ? 'xl:hidden' : ''} `}
                     >
                         <Image 
                             src={service.image}
@@ -52,6 +52,13 @@ export default function What() {
                     </div>
                 )))}
             </section>
+
+            {/* Text for xl views */}
+            <div className="hidden xl:flex mt-[6rem] 2xl:w-3/4 2xl:mx-auto flex-col gap-[0.5rem] text-white text-justify">
+                <p className='narrative font-bold'>Looking for commercial or industrial laundry services?</p> 
+                <p className='narrative'>Please visit us on <Link href={'https://www.blueline-laundry.com/'} target='_blank' className=' italic'>www.blueline-laundry.com</Link>.</p>
+            </div>
+
         </article>         
   
     </main>
