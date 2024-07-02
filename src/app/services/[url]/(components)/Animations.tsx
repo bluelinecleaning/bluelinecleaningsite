@@ -1,4 +1,5 @@
-// 'use client'
+'use client'
+
 import React, { useRef } from 'react'
 import Lottie, {LottieRefCurrentProps} from "lottie-react";
 import Image from 'next/image';

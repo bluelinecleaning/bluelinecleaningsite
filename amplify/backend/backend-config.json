@@ -1,1 +1,43 @@
-{}
+{
+  "api": {
+    "generalQuotes": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "handleGeneralQuotes"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    }
+  },
+  "function": {
+    "handleGeneralQuotes": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_handleGeneralQuotes_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "handleGeneralQuotes"
+        }
+      ]
+    },
+    "AMPLIFY_function_handleGeneralQuotes_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "handleGeneralQuotes"
+        }
+      ]
+    }
+  }
+}

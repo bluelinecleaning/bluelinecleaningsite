@@ -1,23 +1,57 @@
 'use client'
 
-import React from 'react'
+import React, { useState } from 'react'
 import { useFormik } from 'formik'
 import * as Yup from "yup"
+import Lottie from 'lottie-react'
 import Image from 'next/image'
 
 // Assets
 import Logo from '../../../assets/blue-logo.png'
 import Indicate from '../../../assets/form-image.png'
+import Success from '../../../assets/success.json'
+
+// Amplify configuration
+import config from '@/amplifyconfiguration.json'
+import { Amplify } from 'aws-amplify'
+import { post } from 'aws-amplify/api'
+
+
+// Api key
+const apiKey: string | undefined = process.env.NEXT_PUBLIC_API_KEY;
+
+Amplify.configure(config, {
+  API: {
+    REST: {
+      headers: async () => {
+        return { 'X-Api-Key': apiKey || '' };
+      }
+    }
+  }
+});
+
 
 export default function Form() {
   
+  // State Hooks
+  const [buttonText, setButtonText] = useState("Submit")
+  const [isSending, setIsSending] = useState(false)
+
+  // State to render or hide form when success sending message
+  const [renderForm, setRenderForm] = useState(true);
+  const [renderSuccessMessage, setRenderSuccessMessage] = useState(false);
+
+  // State to render error when sending message
+  const [renderErrorMessage, setRenderErrorMessage] = useState(false);
+
   // Functions
   const formik = useFormik({
     initialValues: {
       firstname: "",
       lastname: "",
       email: "",
-      service: "",
+      phoneNumber: "",
+      service: "Commercial cleaning",
       description: "",
       terms: ""
     }, 
@@ -31,18 +65,59 @@ export default function Form() {
       email: Yup.string()
         .email("Invalid email address")
         .required("Email address is required"),
+      phoneNumber: Yup.string()
+        .min(10, "Please provide a valid phone number")
+        .required("Phone number is required"),
       description: Yup.string()
         .min(20, "Please leave us a more detailed description about your premises")
         .required('A premises description is required'),
       terms: Yup.array().required("Terms of service must be checked")
     }),
     onSubmit: async(values) => {
-      console.log('Form sent with: ', values)
+      setButtonText('Sending...')
+      setIsSending(true)
+      try {
+        let resOperation = post({
+          apiName: 'generalQuotes',
+          path: '/create',
+          options: {
+            body: {
+              values
+            }
+          }
+        })
+
+        if((await resOperation.response).statusCode == 200) {
+          setRenderForm(!renderForm)
+          setRenderSuccessMessage(true)
+          setTimeout(() => {
+            setButtonText("Message sent")
+            setIsSending(false)
+          }, 2000)
+        } else {
+          setRenderForm(false)
+          setRenderErrorMessage(true)
+          setTimeout(() => {
+            setButtonText('Message not sent')
+            setIsSending(false)
+          }, 2000)
+        }
+      } catch (error) {
+        console.log("error", error)
+        setRenderForm(false)
+        setRenderErrorMessage(true)
+        setTimeout(() => {
+          // Reset the button text and indicate that the form has been sent
+          setButtonText('Message not sent');
+          setIsSending(false);
+        }, 4000);
+      }
     }
   })
 
   return (
     <section className='px-[1rem] py-[3rem] sm:mx-auto sm:px-[2rem] md:px-[4rem] lg:px-[8rem] bg-blueBranding' id='contact' >
+      {renderForm && (
         <form 
           className='relative page 2xl:w-3/4 2xl:mx-auto lg:px-[4rem] border shadow-xl bg-gradient-to-tl from-gray-200 to-white lg:flex ' 
           onSubmit={formik.handleSubmit}
@@ -56,7 +131,7 @@ export default function Form() {
             />
             <Image 
               src={Indicate}
-              className='hidden lg:block ml-[5rem] w-[25rem] opacity-80 '
+              className='hidden lg:block xl:ml-[5rem] 2xl:ml-[2rem] 2xl:w-[25rem] opacity-80 '
               title='Blueline worker'
               alt='Blueline worker inviting to fill the form'
             />
@@ -124,18 +199,38 @@ export default function Form() {
               />
             </label>
 
+            {/* Phone */}
+            <label htmlFor="phoneNumber" className='flex flex-col gap-[0.5rem]'>
+              <span className={`${formik.touched.phoneNumber && formik.errors.phoneNumber ? 'text-red-400' : 'text-blueBranding'}`}>
+                {formik.touched.phoneNumber && formik.errors.phoneNumber 
+                  ? formik.errors.phoneNumber 
+                  : 'Phone number'
+                }
+              </span>
+              <input 
+                required 
+                type="tel" 
+                name='phoneNumber' 
+                value={formik.values.phoneNumber} 
+                onChange={formik.handleChange} 
+                placeholder='Enter your phone number' 
+                onBlur={formik.handleBlur}
+                className='form-input'
+              />
+            </label>
+
             {/* Service */}
             <label htmlFor="service" className='flex flex-col gap-[0.5rem]'>
-                <span className='text-blueBranding'>Service type</span>
-                  <div className=''>
-                    <select name="service " value={formik.values.service} onChange={formik.handleChange} className='bg-transparent rounded w-full px-0 text-black'>
-                      <option className='w-[8rem]' >Commercial cleaning</option>
-                      <option className='w-[8rem]'> Industrial cleaning</option>
-                      <option className='w-[8rem]'>Factory cleaning</option>
-                      <option className='w-[8rem]'>Domestic cleaning</option>
-                      <option className='w-[8rem]'>School cleaning</option>
-                    </select>
-                  </div>
+              <span className='text-blueBranding'>Service type</span>
+                <div className=''>
+                  <select name="service" value={formik.values.service} onChange={formik.handleChange} className='bg-transparent rounded w-full px-0 text-black'>
+                    <option className='w-[8rem]' >Commercial cleaning</option>
+                    <option className='w-[8rem]'> Industrial cleaning</option>
+                    <option className='w-[8rem]'>Production cleaning</option>
+                    {/* <option className='w-[8rem]'>Domestic cleaning</option> */}
+                    <option className='w-[8rem]'>School cleaning</option>
+                  </select>
+                </div>
             </label>
 
             {/* Description */}
@@ -178,10 +273,25 @@ export default function Form() {
               type='submit'
               // onClick={}
             >
-              Submit
+              {buttonText}
             </button>
           </div>
         </form>
+      )}
+
+      {/* Render succes animation */}
+      {!renderForm && renderSuccessMessage && (
+      <div className='flex flex-col  items-center'>
+        <Lottie 
+          className='w-[12rem] lg:w-[26rem] xl:w-[30rem] '
+          animationData={Success}
+          loop={true}
+        />
+        {/* <div className='border-b-2 border-pink-200 w-1/3'></div> */}
+        <h3 className='mt-[2rem] text-white text-[1.25rem] xl:text-[1.875rem] font-semibold'>Your message has been sent!</h3>
+        <p className='text-white'>Our team will get in touch shortly.</p>
+      </div>
+      )}
     </section>
   )
 }
