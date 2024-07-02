@@ -227,113 +227,113 @@ export const ServicesArray = [
         reviewer2: "Sean",
         reviewer2Position: "Property and Fleet Manager",
     },
-    {
-        id: 2,
-        title: 'Domestic Cleaning Service',
-        short: 'Keeping your house tidy has never been easier. Let us keep your home spotless so you can rest easy, knowing you’re contributing to positive community outcomes.',
-        url: 'domestic-cleaning-service',
-        image: Domestic,
-        hero: Domestic,
-        sticker: DomesticSticker,
-        card: Avaialability,
-        options: [
-            {
-                id: 1,
-                optionTitle: "Regular House Cleaning",
-                optionPrice: 45,
-                optionContent: [
-                    {
-                        descriptionId: 1,
-                        descriptionText: "Scheduled weekly or bi-weekly cleaning to maintain a clean home."
-                    },
-                    {
-                        descriptionId: 2,
-                        descriptionText: "General housekeeping tasks including dusting, vacuuming, bathrooms, mopping, and surface cleaning."
-                    },
-                    {
-                        descriptionId: 3,
-                        descriptionText: "Customizable cleaning plans to fit your household's needs."
-                    },
-                    {
-                        descriptionId: 4,
-                        descriptionText: "Steam cleaning of carpets and upholstery as required."
-                    }
-                ]
-            },
-            {
-                id: 2,
-                optionTitle: "Deep Cleaning",
-                optionPrice: 45,
-                optionContent: [
-                    {
-                        descriptionId: 1,
-                        descriptionText: "Intensive cleaning of all areas, focusing on hard-to-reach and neglected spots."
-                    },
-                    {
-                        descriptionId: 2,
-                        descriptionText: "Services include scrubbing bathrooms, kitchens, and cleaning behind appliances and furniture. Thorough cleaning of windows, curtains, and air vents, along with regular cleaning tasks."
-                    },
-                    {
-                        descriptionId: 3,
-                        descriptionText: "Ideal for preparing your home for special occasions or after a prolonged absence."
-                    },
-                    {
-                        descriptionId: 4,
-                        descriptionText: "Steam cleaning of carpets and upholstery as required."
-                    },
-                ]
-            },
-            {
-                id: 3,
-                optionTitle: "Bond Cleaning",
-                optionPrice: 45,
-                optionContent: [
-                    {
-                        descriptionId: 1,
-                        descriptionText: "End-of-lease cleaning to ensure the property is left in pristine condition."
-                    },
-                    {
-                        descriptionId: 2,
-                        descriptionText: "Detailed cleaning services designed to meet the requirements for bond return."
-                    },
-                    {
-                        descriptionId: 3,
-                        descriptionText: "Includes carpet cleaning, wall washing, and appliance cleaning."
-                    },
-                    {
-                        descriptionId: 4,
-                        descriptionText: "Steam cleaning of carpets and upholstery as required"
-                    },
-                ]
-            },
-            {
-                id: 4,
-                optionTitle: "Post-Construction Cleaning",
-                optionPrice: 45,
-                optionContent: [
-                    {
-                        descriptionId: 1,
-                        descriptionText: "Cleaning services after home renovations to remove construction dust and debris."
-                    },
-                    {
-                        descriptionId: 2,
-                        descriptionText: "Detailed cleaning to ensure the building is ready for immediate occupancy."
-                    },
-                    {
-                        descriptionId: 3,
-                        descriptionText: "Services include window cleaning, dusting, mopping, and removing any construction materials."
-                    }
-                ]
-            }
-        ],
-        description: "Blueline’s Domestic Cleaning services are designed to meet the varied needs of households. Whether you require regular upkeep or a deep seasonal clean, our team provides thorough and reliable services tailored to your home.",
-        review1: "From day one, Blueline have shown a commitment to quality assurance and flexibility to meet our varied requirements. Couldn’t speak more highly of our experience",
-        reviewer1: "Martin",
-        reviewer1Position: "Schools Property Manager",
-        review2: "It’s been a pleasure working with Blueline across our various office and facility network. They very quickly got up to speed and have proven a valubale asset to our overall businesses",
-        reviewer2: "Sean",
-        reviewer2Position: "Property and Fleet Manager",
-    },
+    // {
+    //     id: 2,
+    //     title: 'Domestic Cleaning Service',
+    //     short: 'Keeping your house tidy has never been easier. Let us keep your home spotless so you can rest easy, knowing you’re contributing to positive community outcomes.',
+    //     url: 'domestic-cleaning-service',
+    //     image: Domestic,
+    //     hero: Domestic,
+    //     sticker: DomesticSticker,
+    //     card: Avaialability,
+    //     options: [
+    //         {
+    //             id: 1,
+    //             optionTitle: "Regular House Cleaning",
+    //             optionPrice: 45,
+    //             optionContent: [
+    //                 {
+    //                     descriptionId: 1,
+    //                     descriptionText: "Scheduled weekly or bi-weekly cleaning to maintain a clean home."
+    //                 },
+    //                 {
+    //                     descriptionId: 2,
+    //                     descriptionText: "General housekeeping tasks including dusting, vacuuming, bathrooms, mopping, and surface cleaning."
+    //                 },
+    //                 {
+    //                     descriptionId: 3,
+    //                     descriptionText: "Customizable cleaning plans to fit your household's needs."
+    //                 },
+    //                 {
+    //                     descriptionId: 4,
+    //                     descriptionText: "Steam cleaning of carpets and upholstery as required."
+    //                 }
+    //             ]
+    //         },
+    //         {
+    //             id: 2,
+    //             optionTitle: "Deep Cleaning",
+    //             optionPrice: 45,
+    //             optionContent: [
+    //                 {
+    //                     descriptionId: 1,
+    //                     descriptionText: "Intensive cleaning of all areas, focusing on hard-to-reach and neglected spots."
+    //                 },
+    //                 {
+    //                     descriptionId: 2,
+    //                     descriptionText: "Services include scrubbing bathrooms, kitchens, and cleaning behind appliances and furniture. Thorough cleaning of windows, curtains, and air vents, along with regular cleaning tasks."
+    //                 },
+    //                 {
+    //                     descriptionId: 3,
+    //                     descriptionText: "Ideal for preparing your home for special occasions or after a prolonged absence."
+    //                 },
+    //                 {
+    //                     descriptionId: 4,
+    //                     descriptionText: "Steam cleaning of carpets and upholstery as required."
+    //                 },
+    //             ]
+    //         },
+    //         {
+    //             id: 3,
+    //             optionTitle: "Bond Cleaning",
+    //             optionPrice: 45,
+    //             optionContent: [
+    //                 {
+    //                     descriptionId: 1,
+    //                     descriptionText: "End-of-lease cleaning to ensure the property is left in pristine condition."
+    //                 },
+    //                 {
+    //                     descriptionId: 2,
+    //                     descriptionText: "Detailed cleaning services designed to meet the requirements for bond return."
+    //                 },
+    //                 {
+    //                     descriptionId: 3,
+    //                     descriptionText: "Includes carpet cleaning, wall washing, and appliance cleaning."
+    //                 },
+    //                 {
+    //                     descriptionId: 4,
+    //                     descriptionText: "Steam cleaning of carpets and upholstery as required"
+    //                 },
+    //             ]
+    //         },
+    //         {
+    //             id: 4,
+    //             optionTitle: "Post-Construction Cleaning",
+    //             optionPrice: 45,
+    //             optionContent: [
+    //                 {
+    //                     descriptionId: 1,
+    //                     descriptionText: "Cleaning services after home renovations to remove construction dust and debris."
+    //                 },
+    //                 {
+    //                     descriptionId: 2,
+    //                     descriptionText: "Detailed cleaning to ensure the building is ready for immediate occupancy."
+    //                 },
+    //                 {
+    //                     descriptionId: 3,
+    //                     descriptionText: "Services include window cleaning, dusting, mopping, and removing any construction materials."
+    //                 }
+    //             ]
+    //         }
+    //     ],
+    //     description: "Blueline’s Domestic Cleaning services are designed to meet the varied needs of households. Whether you require regular upkeep or a deep seasonal clean, our team provides thorough and reliable services tailored to your home.",
+    //     review1: "From day one, Blueline have shown a commitment to quality assurance and flexibility to meet our varied requirements. Couldn’t speak more highly of our experience",
+    //     reviewer1: "Martin",
+    //     reviewer1Position: "Schools Property Manager",
+    //     review2: "It’s been a pleasure working with Blueline across our various office and facility network. They very quickly got up to speed and have proven a valubale asset to our overall businesses",
+    //     reviewer2: "Sean",
+    //     reviewer2Position: "Property and Fleet Manager",
+    // },
     {
         id: 4,
         title: 'School Cleaning Service',

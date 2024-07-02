@@ -227,7 +227,7 @@ export default function Form() {
                     <option className='w-[8rem]' >Commercial cleaning</option>
                     <option className='w-[8rem]'> Industrial cleaning</option>
                     <option className='w-[8rem]'>Production cleaning</option>
-                    <option className='w-[8rem]'>Domestic cleaning</option>
+                    {/* <option className='w-[8rem]'>Domestic cleaning</option> */}
                     <option className='w-[8rem]'>School cleaning</option>
                   </select>
                 </div>

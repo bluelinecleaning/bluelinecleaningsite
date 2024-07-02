@@ -27,7 +27,7 @@ export default function Intro() {
         <div>
           <Image 
             src={WhiteLogo}
-            className='h-[6.5rem] md:h-[10rem] xl:h-[12rem]  w-auto'
+            className='h-[6.5rem] md:h-[10rem] xl:h-[12rem] w-auto'
             title='Blueline Cleaning Logo'
             alt='Blueline Cleaning Logo'
           />
