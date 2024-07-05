@@ -222,7 +222,7 @@ export const ServicesArray = [
         description: "Blueline’s Industrial / Production Cleaning and Preventative Maintenance services meet the rigorous demands of industrial environments. We handle large-scale operations with specialized equipment and safety protocols to ensure facilities are clean, safe, and compliant with regulations.",
         review1: "I have been beyond impressed with the expertise and insight shown by Juan and the team in creating preventative and maintenance cleaning risk assessments and safe work protocols specifically for our site. The plant has never looked better, our risks of incidents are greatly reduced, and my upcoming conversation with our insurance broker will be far more comfortable. Thank you Blueline.",
         reviewer1: "Martin O.",
-        reviewer1Position: "Schools Property Manager",
+        reviewer1Position: "General Manager Operations",
         review2: "It’s been a pleasure working with Blueline across our various office and facility network. They very quickly got up to speed and have proven a valubale asset to our overall businesses",
         reviewer2: "Sean",
         reviewer2Position: "Property and Fleet Manager",
