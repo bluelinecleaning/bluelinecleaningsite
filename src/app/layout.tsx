@@ -31,11 +31,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Blueline Cleaning',
     description: 'Registered charity organization that creates meaningful employment opportunities by providing commercial, industrial and production cleaning services in Tasmania',
-    url: 'https://blueline-cleaning.s3.ap-southeast-2.amazonaws.com/logo3.svg',
+    url: 'https://blueline-cleaning.s3.ap-southeast-2.amazonaws.com/logo1.png',
     type: 'website',
     images: [
       {
-        url: 'https://blueline-cleaning.s3.ap-southeast-2.amazonaws.com/logo3.svg'
+        url: 'https://blueline-cleaning.s3.ap-southeast-2.amazonaws.com/logo1.png'
       },
     ]
   },
