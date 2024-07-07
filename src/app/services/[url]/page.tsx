@@ -58,7 +58,7 @@ export default function page({params}: { params: { url: string } }) {
         "description": `${activeService?.description}`,
         "logo": {
             "@type": "ImageObject",
-            "url": `https://blueline-cleaning.s3.ap-southeast-2.amazonaws.com/logo3.svg`
+            "url": `https://blueline-cleaning.s3.ap-southeast-2.amazonaws.com/logo1.png`
         },
         "sameAs": [
             `https://www.bluelinecleaning.com.au/blog/${activeService?.url}`
