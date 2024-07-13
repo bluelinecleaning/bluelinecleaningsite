@@ -30,9 +30,9 @@ export default function Intro() {
         <div> 
             {/* Text */}
             <div className="flex flex-col gap-[0.5rem] md:gap-[2rem] text-white w-full">
-              <h1 className='font-bold md:text-[1.5rem] md:leading-[1.8rem] lg:px-[4rem] lg:mx-auto '>Our Story</h1>
-              <div className="flex flex-col w-[17rem] ">
-                <p className='font-bold text-[2rem] md:text-[3rem] lg:text-[4rem] leading-[2rem] md:leading-[3rem] lg:leading-[4rem] '>{age} Years of Service to Our Community</p>
+              <h1 className='font-bold sm:text-[1.5rem] lg:text-[2rem] '>Our Story</h1>
+              <div className="flex flex-col w-[17rem] sm:w-[28rem] lg:w-[35rem] ">
+                <p className='font-bold text-[2rem] sm:text-[3rem] lg:text-[4rem] leading-[2rem] sm:leading-[3rem] lg:leading-[4rem] '>{age} Years of Service to Our Community</p>
               </div>
             </div>
         </div>
