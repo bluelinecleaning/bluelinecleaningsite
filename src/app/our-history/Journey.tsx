@@ -18,8 +18,10 @@ export default function Journey() {
                 <p className='narrative'> Through <strong>{age} years of service</strong> to the community, our business has survived through two World Wars, the Polio Pandemic, the Spanish Flu, the 1967 Bushfires, the Global Financial Crisis and COVID-19.</p>
             </div>
 
-            <Timeline />
         </article>
+        
+        <Timeline />
+
 
     </main>
   )
