@@ -1,13 +1,13 @@
 'use client'
 
 import React, { useEffect, useRef } from 'react'
-import { motion, useInView } from 'framer-motion'
+import { motion, useInView, useTransform } from 'framer-motion'
 import Image from 'next/image';
 
 // Assets
 import { datesArray } from '../(constants)/dates'
 
-export default function Timeline() {
+export default function Timeline({scrollYProgress}:any) {
     // Ref for parent div
     const sectionRef = useRef(null);
     const isSectionInView = useInView(sectionRef, { margin: '0px 0px -50% 0px' });
@@ -18,9 +18,14 @@ export default function Timeline() {
 
     const inViews = refs.current.map(ref => useInView(ref, { margin: '0px 0px -30% 0px' }));
 
+   
+
     return (
-        <section className='pt-[3rem] md:pt-[5rem] lg:pt-[8rem]'>
+        <section 
+            className='pt-[3rem] md:pt-[5rem] lg:pt-[8rem]'
+        >
             <motion.div
+                className='sticky top-0'
                 ref={sectionRef}
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
@@ -46,7 +51,7 @@ export default function Timeline() {
                         {datesArray.map((date, index) => (
                             <motion.div
                                 key={index}
-                                className='mt-[3rem]'
+                                className=''
                                 ref={refs.current[index]}
                                 
                                 initial={{ opacity: 0 }}
@@ -59,7 +64,7 @@ export default function Timeline() {
                                         background: inViews[index] ? date.color : "transparent",
                                         transition: "2s background"
                                     }}
-                                    className={`page xl:w-2/3 text-${date.textColor} flex flex-col gap-[1rem] `}
+                                    className={`page xl:w-2/3 text-${date.textColor} flex flex-col gap-[1rem] lg:text-center `}
                                 >
                                     <h4 className='font-bold text-[2rem] ' >{date.year}</h4>
                                     <Image 
@@ -69,7 +74,7 @@ export default function Timeline() {
                                         title={date.imagetitle}
                                         alt={date.imageAlt}
                                     />
-                                    <p className={`narrative text-justify `}>{date.text}</p>
+                                    <p className={`narrative text-justify lg:text-center `}>{date.text}</p>
                                     {date.secondEventImage && (
                                         <div className="flex flex-col gap-[1rem]">
                                             <Image 
@@ -78,7 +83,7 @@ export default function Timeline() {
                                                 title={date.secondImagetitle}
                                                 alt={date.secondImageAlt}
                                             />
-                                             <p className={`narrative text-justify `}>{date.secondEventText}</p>
+                                             <p className={`narrative text-justify lg:text-center `}>{date.secondEventText}</p>
                                         </div>
                                         
                                     )}
@@ -90,13 +95,6 @@ export default function Timeline() {
                 </div>
             </motion.div>
 
-            <motion.aside
-                // ref={}
-                className='page'
-            >
-                <h3 className='mainTitle'>Vision for the Future</h3>
-            </motion.aside>
-        {/* #0181AC */}
         </section>
     );
 }

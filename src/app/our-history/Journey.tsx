@@ -1,15 +1,22 @@
-import React from 'react'
+'use client'
+
+import React, { useEffect, useRef } from 'react'
 import Timeline from './(components)/Timeline';
+import Vision from './(components)/Vision';
+import { useScroll } from 'framer-motion';
+import Lenis from 'lenis';
 
 export default function Journey() {
     const foundingYear = 1893;
     const currentYear = new Date().getFullYear();
     const age = currentYear - foundingYear;
+
   
+
     return (
     <main className='pt-[3rem] md:pt-[5rem] lg:pt-[8rem]'>
         <article className='page  w-full'>
-            <h2 className='mainTitle'>PROUD OF OUR JOURNEY</h2>
+            <h2 className='mainTitle'>PROUDS OF OUR JOURNEY</h2>
 
             {/* Text */}
             <div className="mt-[2rem] md:mt-[3rem] lg:mt-[6rem] 2xl:w-3/4 2xl:mx-auto flex flex-col gap-[1rem] text-black text-justify">
@@ -19,8 +26,14 @@ export default function Journey() {
             </div>
 
         </article>
+        <section  className="relative ">
+            <Timeline  />
+            <div className="bg-gray-100 py-[2rem] lg:py-[4rem] ">
+                <Vision  />
+            </div>
+
+        </section>
         
-        <Timeline />
 
 
     </main>
