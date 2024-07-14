@@ -1,24 +1,20 @@
 'use client'
 
-import React, { useEffect, useRef } from 'react'
-import { motion, useInView, useTransform } from 'framer-motion'
+import React, { useRef } from 'react';
+import { motion, useInView } from 'framer-motion';
 import Image from 'next/image';
 
 // Assets
-import { datesArray } from '../(constants)/dates'
+import { datesArray } from '../(constants)/dates';
+import useInViewForDates from './useInViewForDates'; // Import the custom hook
 
 export default function Timeline({scrollYProgress}:any) {
     // Ref for parent div
     const sectionRef = useRef(null);
     const isSectionInView = useInView(sectionRef, { margin: '0px 0px -50% 0px' });
 
-    // Refs for timeline dates
-    const refs = useRef([]);
-    refs.current = datesArray.map((_, i) => refs.current[i] ?? React.createRef());
-
-    const inViews = refs.current.map(ref => useInView(ref, { margin: '0px 0px -30% 0px' }));
-
-   
+    // Use the custom hook to get refs and inView states
+    const [refs, inViews] = useInViewForDates(datesArray);
 
     return (
         <section 
@@ -52,7 +48,7 @@ export default function Timeline({scrollYProgress}:any) {
                             <motion.div
                                 key={index}
                                 className=''
-                                ref={refs.current[index]}
+                                ref={refs[index]}
                                 
                                 initial={{ opacity: 0 }}
                                 whileInView={{ opacity: 1 }}
@@ -60,13 +56,12 @@ export default function Timeline({scrollYProgress}:any) {
                             >
                                 <div
                                     style={{
-                                    
                                         background: inViews[index] ? date.color : "transparent",
                                         transition: "2s background"
                                     }}
                                     className={`page xl:w-2/3 text-${date.textColor} flex flex-col gap-[1rem] lg:text-center `}
                                 >
-                                    <h4 className='font-bold text-[2rem] ' >{date.year}</h4>
+                                    <h4 className='font-bold text-[2rem]'>{date.year}</h4>
                                     <Image 
                                         style={{background: date.imageBg}}
                                         src={date.image}
@@ -83,18 +78,15 @@ export default function Timeline({scrollYProgress}:any) {
                                                 title={date.secondImagetitle}
                                                 alt={date.secondImageAlt}
                                             />
-                                             <p className={`narrative text-justify lg:text-center `}>{date.secondEventText}</p>
+                                            <p className={`narrative text-justify lg:text-center `}>{date.secondEventText}</p>
                                         </div>
-                                        
                                     )}
                                 </div>
                             </motion.div>
                         ))}
-
                     </div>
                 </div>
             </motion.div>
-
         </section>
     );
 }
