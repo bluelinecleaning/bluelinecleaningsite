@@ -41,8 +41,8 @@ export default function Intro() {
                 className='sm:-mt-[6rem] w-full h-auto '
                 title='Registered Charity Certificate'
                 alt='Registered Charity Certification'
-                height={107}
-                width={164}
+                height={345}
+                width={528}
               />
               
             </div>
