@@ -20,13 +20,13 @@ export async function generateMetadata({params}: { params: { url: string } }): P
 
     return {
         title: `${activeService?.title}`,
-        description: `${activeService?.description}`,
+        description: `${activeService?.metaDescription}`,
         alternates: {
             canonical: `https://www.bluelinecleaning.com.au/services/${activeService?.url}`
         },
         openGraph: {
             title: `${activeService?.title}`,
-            description: `${activeService?.description}`,
+            description: `${activeService?.metaDescription}`,
             url: `https://blueline-cleaning.s3.ap-southeast-2.amazonaws.com/logo3.svg`,
             type: 'website',
             images: [
@@ -55,7 +55,7 @@ export default function page({params}: { params: { url: string } }) {
         "name": `${activeService?.title}`,
         "url": `https://www.bluelinecleaning.com.au/services/${activeService?.url}`,
         "headline": "Commercial, Industrial and Production Cleaning Services in Tasmania",
-        "description": `${activeService?.description}`,
+        "description": `${activeService?.metaDescription}`,
         "logo": {
             "@type": "ImageObject",
             "url": `https://blueline-cleaning.s3.ap-southeast-2.amazonaws.com/logo1.png`

@@ -32,6 +32,7 @@ export default function What() {
                     >
                         <Image 
                             src={service.image}
+                            title={`${service.title} service`}
                             alt={`${service.title} service`}
                             className="h-[18rem] lg:h-[21rem] object-cover transition-transform group-hover:scale-125 lg:group-hover:scale-150  duration-500"
                         />
