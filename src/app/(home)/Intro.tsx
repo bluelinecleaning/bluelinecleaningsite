@@ -30,6 +30,8 @@ export default function Intro() {
             className='h-[6.5rem] md:h-[10rem] xl:h-[12rem] w-auto'
             title='Blueline Cleaning Logo'
             alt='Blueline Cleaning Logo'
+            height={104}
+            width={251}
           />
 
           <div className="mt-[1rem] md:mt-[3rem] flex gap-[1rem] lg:gap-[2rem] ">
@@ -39,6 +41,8 @@ export default function Intro() {
                 className='sm:-mt-[6rem] w-full h-auto '
                 title='Registered Charity Certificate'
                 alt='Registered Charity Certification'
+                height={345}
+                width={528}
               />
               
             </div>
