@@ -15,6 +15,10 @@ export default async function sitemap() : Promise<MetadataRoute.Sitemap> {
             url: 'https://www.bluelinecleaning.com.au',
             priority: 1
         },
+        {
+            url: 'https://www.bluelinecleaning.com.au/our-history',
+            priority: 0.8
+        },
         ...services
     ]
 }
