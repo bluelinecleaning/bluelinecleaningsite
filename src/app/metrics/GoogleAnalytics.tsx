@@ -1,5 +1,7 @@
 import React from 'react'
 import Script from 'next/script'
+import ReactGA from "react-ga4";
+
 
 export default function GoogleAnalytics() {
   return (
@@ -22,3 +24,14 @@ export default function GoogleAnalytics() {
     </>
   )
 }
+
+ // GA4 Event
+ const trackGAEvent = (category:any, action:any, label:any) => {
+    ReactGA.event({
+      category: category,
+      action: action,
+      label: label,
+    }); 
+}
+
+export { trackGAEvent }
