@@ -5,6 +5,7 @@ import { useFormik } from 'formik'
 import * as Yup from "yup"
 import Lottie from 'lottie-react'
 import Image from 'next/image'
+import { trackGAEvent } from '../metrics/GoogleAnalytics'
 
 // Assets
 import Logo from '../../../assets/blue-logo.png'
@@ -115,12 +116,24 @@ export default function Form() {
     }
   })
 
+   // GA Event listener
+   function handleEvent(event:any) {
+    trackGAEvent("Contact", "Submit contact form", "Submit");
+    // handle the actual form submission here
+  }
+
+  const handleSubmit = (event:any) => {
+    event.preventDefault();
+    formik.handleSubmit()
+    handleEvent(event)
+  }
+
   return (
     <section className='px-[1rem] py-[3rem] sm:mx-auto sm:px-[2rem] md:px-[4rem] lg:px-[8rem] bg-blueBranding' id='contact' >
       {renderForm && (
         <form 
           className='relative page 2xl:w-3/4 2xl:mx-auto lg:px-[4rem] border shadow-xl bg-gradient-to-tl from-gray-200 to-white lg:flex ' 
-          onSubmit={formik.handleSubmit}
+          onSubmit={handleSubmit}
         >
           <div className="lg:w-1/3 xl:w-1/4 flex flex-col justify-center items-center gap-[2rem]">
             <Image 
