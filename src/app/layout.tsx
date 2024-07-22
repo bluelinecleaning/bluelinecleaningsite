@@ -1,9 +1,12 @@
 import type { Metadata } from "next";
 import { Fira_Sans, Inter } from "next/font/google";
 import "./globals.css";
+
+// Components
 import Header from "./GlobalComponents/Header";
 import Footer from "./GlobalComponents/Footer";
 import Quality from "./(home)/Quality";
+import GoogleAnalytics from "./metrics/GoogleAnalytics";
 
 // Amplify
 import ConfigureAmplifyClientSide from "./ConfigureAmplifyClientSide";
@@ -66,6 +69,7 @@ export default function RootLayout({
           sizes="<generated>"
         />
       </head>
+      <GoogleAnalytics />
       <body className={`${inter.className} ${fira.variable}`}>
         <>
           <ConfigureAmplifyClientSide />
