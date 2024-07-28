@@ -16,7 +16,7 @@ export default function Impact() {
           <p>By choosing our cleaning or laundry services, you partner with us in supporting some of the most vulnerable in our community. Together, we create meaningful job opportunities and enable an inclusive workforce.</p>
         </div>
       </div>
-      <div className="flex items-end justify-between sm:mt-[2rem] md:mt-[3rem] lg:mt-[6rem]  ">
+      {/* <div className="flex items-end justify-between sm:mt-[2rem] md:mt-[3rem] lg:mt-[6rem]  ">
         <Image 
           src={Team}
           className='lg:hidden w-full h-full object-cover'
@@ -30,7 +30,7 @@ export default function Impact() {
           title='Blueline Cleaning Team'
           alt='Blueline Cleaning Team'
         />
-      </div>
+      </div> */}
       
     </section>
   )
