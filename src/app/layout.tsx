@@ -71,6 +71,20 @@ export default function RootLayout({
       </head>
       <GoogleAnalytics />
       <body className={`${inter.className} ${fira.variable}`}>
+      <script src="https://app.socialgrowthco.com/webchat/plugin.js?v=5"></script>
+        <script dangerouslySetInnerHTML={{
+          __html: `
+            (function() {
+              if (typeof window !== "undefined") {
+                window.ktt10.setup({
+                  id: "uO7Km0AcfaI1VS1P2",
+                  accountId: "1269955",
+                  color: "#006dff",
+                });
+              }
+            })();
+          `
+        }} />
         <>
           <ConfigureAmplifyClientSide />
           <Header />

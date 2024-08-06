@@ -7,6 +7,7 @@ import Impact from "./(home)/Impact";
 import Intro from "./(home)/Intro";
 import What from "./(home)/What";
 
+
 export default function Home() {
   const jsonLd = {
     "@context": "https://schema.org",
@@ -51,6 +52,7 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadCrumbData)}}
       />
+       
       <Intro />
       <What />
       <Impact />
