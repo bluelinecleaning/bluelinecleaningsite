@@ -6,6 +6,7 @@ import Foundation from "./(home)/Foundation";
 import Impact from "./(home)/Impact";
 import Intro from "./(home)/Intro";
 import What from "./(home)/What";
+import ChatboxScript from "./GlobalComponents/ChatboxScript";
 
 export default function Home() {
   const jsonLd = {
@@ -51,11 +52,26 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadCrumbData)}}
       />
+       <script src="https://app.socialgrowthco.com/webchat/plugin.js?v=5"></script>
+        <script dangerouslySetInnerHTML={{
+          __html: `
+            (function() {
+              if (typeof window !== "undefined") {
+                window.ktt10.setup({
+                  id: "uO7Km0AcfaI1VS1P2",
+                  accountId: "1269955",
+                  color: "#006dff",
+                });
+              }
+            })();
+          `
+        }} />
       <Intro />
       <What />
       <Impact />
       <Foundation />
       <Form />
+      {/* <ChatboxScript /> */}
     </div>
   );
 }
