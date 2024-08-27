@@ -7,7 +7,7 @@ export default defineConfig({
   name: 'default',
   title: 'bluelinecleaning',
 
-  projectId: 'etheuxkk',
+  projectId: 'es78ed5j',
   dataset: 'production',
 
   plugins: [structureTool(), visionTool()],
