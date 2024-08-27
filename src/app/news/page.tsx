@@ -24,7 +24,7 @@ export default async function page() {
     const data: simpleNewsCard[] = await getData()
 
     return (
-    <div className='fira pt-[4.5rem] min-h-screen '>
+    <div className='fira pt-[4.5rem] lg:pt-0 '>
         <Intro news={data} />
     </div>
   )
