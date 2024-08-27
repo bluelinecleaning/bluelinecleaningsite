@@ -4,3 +4,10 @@ export interface simpleNewsCard {
     currentSlug: string;
     titleImage: any
 }
+
+export interface fullNews {
+    currentSlug: string;
+    title: string;
+    content: any;
+    titleImage: any;
+}

@@ -3,6 +3,7 @@ import { client } from '../lib/sanity'
 import { simpleNewsCard } from '../lib/interface'
 import Intro from './Intro'
 
+export const revalidate = 30 // Revalidate at most 30 seconds
 
 async function getData() {
     const query = `
