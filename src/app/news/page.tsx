@@ -6,7 +6,7 @@ import { getNews } from '../utils/fetchNews'
 
 export const revalidate = 0 // Revalidate at most 30 seconds
 
-export async function getData() {
+async function getData() {
     // const query = `
     //     *[_type == 'news'] | order(_createdAt desc) {
     //     title,
