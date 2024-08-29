@@ -12,13 +12,13 @@ export default function Intro() {
       {/* Bg image */}
       <div className="-z-30 absolute inset-0 h-[30.5rem] sm:h-[35.5rem] md:h-[48.5rem] lg:h-auto ">
         <Image 
-            className=' w-full h-full object-cover '
-            src={Hero} 
-            title='Hero image'
-            alt='Hero image, hands holding with support'
-            fill
-            sizes='100vw'
-            priority={true}
+          className=' w-full h-full object-cover '
+          src={Hero} 
+          title='Hero image'
+          alt='Hero image, hands holding with support'
+          fill
+          sizes='100vw'
+          priority={true}
         />
         <div className="absolute inset-0 bg-gradient-to-b from-[#0081aa] via-[#0081aa] to-white opacity-60" aria-hidden="true"></div>  
       </div>
@@ -34,11 +34,11 @@ export default function Intro() {
             width={464}
           />
 
-          <div className="mt-[1rem] md:mt-[3rem] flex gap-[1rem] lg:gap-[2rem] ">
+          <div className="mt-[1rem] md:mt-[3rem] flex gap-[1rem] lg:gap-[2rem] xl:gap-0 ">
             <div className="flex flex-col sm:order-2 justify-center sm:justify-start items-center w-1/2 ">
               <Image 
                 src={Banners}
-                className='sm:-mt-[6rem] w-full h-auto '
+                className='sm:-mt-[6rem] 2xl:-mt-[12rem] w-full 2xl:w-2/3 h-auto'
                 title='Registered Charity Certificate'
                 alt='Registered Charity Certification'
                 height={345}
@@ -48,11 +48,11 @@ export default function Intro() {
             </div>
             {/* Text */}
             <div className="flex flex-col sm:order-1 gap-[0.5rem] lg:gap-[1rem] text-white w-1/2">
-              <h1 className='font-bold text-[1.3rem] md:text-[1.5rem] lg:text-[2.5rem] leading-[1.5rem] md:leading-[1.7rem] lg:leading-[2.7rem] '>Commercial, Industrial and Production Cleaning Services in Tasmania</h1>
+              <h1 className='font-bold text-[1.3rem] md:text-[1.5rem] lg:text-[2.5rem] 2xl:text-[2.8rem] leading-[1.5rem] md:leading-[1.7rem] lg:leading-[2.7rem] 2xl:leading-[3rem] '>Commercial, Industrial and Production <span className='text-yellow-400'>Cleaning</span> Services in Tasmania</h1>
               {/* Blue cards */}
               <div className="hidden sm:flex mt-[1rem] md:mt-[2rem] flex-col gap-2 md:gap-4 text-white md:text-[1.2rem] ">
-                <h4 className="py-1 px-4 bg-[#0181AC] w-[13rem] md:w-[15.5rem] font-medium text-center ">Uncompromised Quality</h4>
-                <h4 className="py-1 px-4 bg-[#0181AC] w-[13rem] md:w-[15.5rem] font-medium text-center">Maximum Social Impact</h4>
+                <h4 className="py-1 px-4 bg-[#0181AC] w-[13rem] md:w-[15.5rem] xl:w-[19rem] 2xl:w-[24rem] font-medium text-center xl:text-[1.5rem] 2xl:text-[2rem] ">Uncompromised Quality</h4>
+                <h4 className="py-1 px-4 xl:ml-[1rem] bg-[#0181AC] w-[13rem] md:w-[15.5rem] xl:w-[19rem] 2xl:w-[24rem] font-medium text-center xl:text-[1.5rem] 2xl:text-[2rem]">Maximum Social Impact</h4>
               </div>
             </div>
           </div>

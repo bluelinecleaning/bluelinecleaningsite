@@ -7,7 +7,7 @@ import BiggerTeam from '../../../assets/cleaning-team-bigger.png'
 
 export default function Impact() {
   return (
-    <section className=' bg-gradient-to-b from-[#0181AC] to-gray-300 border-b border-blueBranding' id='impact'>
+    <section className=' bg-gradient-to-b from-[#0181AC] to-blueBranding  border-b border-blueBranding' id='impact'>
       <div className='page 2xl:w-3/4 2xl:mx-auto flex flex-col gap-[1rem] md:gap-[3rem] lg:gap-[6rem]'>
         <h3 className='mainTitle text-white'>Maximum Impact!</h3>
         <div className="flex flex-col gap-2 text-white narrative text-justify">
