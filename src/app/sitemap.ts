@@ -2,6 +2,8 @@ import { MetadataRoute } from "next";
 
 // Constants
 import { ServicesArray } from "./(home)/(constants)/services";
+import { getData } from "./news/page";
+import { fullNews } from "./lib/interface";
 
 export default async function sitemap() : Promise<MetadataRoute.Sitemap> {
     const services = ServicesArray
@@ -13,6 +15,14 @@ export default async function sitemap() : Promise<MetadataRoute.Sitemap> {
             priority: 0.7  // Example priority for services pages
         }));
 
+    const news = await getData();
+    
+    const newsArticles: MetadataRoute.Sitemap = news.map((article:fullNews) => ({
+        url:`https://www.bluelinecleaning.com.au/news/${article.currentSlug}`,
+        priority: 0.5
+    }))
+
+
     return [
         {
             url: 'https://www.bluelinecleaning.com.au',
@@ -22,6 +32,11 @@ export default async function sitemap() : Promise<MetadataRoute.Sitemap> {
             url: 'https://www.bluelinecleaning.com.au/our-history',
             priority: 0.8
         },
-        ...servicesEntries
+        {
+            url: 'https://www.bluelinecleaning.com.au/news',
+            priority: 0.8
+        },
+        ...servicesEntries,
+        ...newsArticles
     ]
 }
