@@ -5,7 +5,7 @@ import Intro from './Intro'
 
 export const revalidate = 0 // Revalidate at most 30 seconds
 
-async function getData() {
+export async function getData() {
     const query = `
         *[_type == 'news'] | order(_createdAt desc) {
         title,
