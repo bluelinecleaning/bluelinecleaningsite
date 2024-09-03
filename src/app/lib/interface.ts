@@ -7,6 +7,7 @@ export interface simpleNewsCard {
 
 export interface fullNews {
     currentSlug: string;
+    smallDescription: string;
     title: string;
     content: any;
     titleImage: any;
