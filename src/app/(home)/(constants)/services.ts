@@ -4,6 +4,7 @@ import Domestic from '../../../../assets/cleaning2.jpg'
 import Industrial from '../../../../assets/industrial.jpg'
 import School from '../../../../assets/cleaning4.jpg'
 import Laundry from '../../../../assets/laundry-service.jpg'
+import Restaurant from '../../../../assets/restaurant-cleaning-main.jpg'
 
 // Service page hero
 import CommercialHero from '../../../../assets/commercial.jpg'
@@ -120,7 +121,7 @@ export const ServicesArray = [
                 ]
             }
         ],
-        description: "Blueline’s Commercial Cleaning services cater to a diverse range of needs of businesses and organizations. We understand the importance of maintaining a clean and healthy environment for employees, clients, work place safety and visitors. Our solutions are customizable to fit the unique requirements of different commercial spaces, ensuring thorough cleaning and sanitization.",
+        description: "Blueline’s Commercial Cleaning services in Tasmania cater to a diverse range of needs of businesses and organizations. We understand the importance of maintaining a clean and healthy environment for employees, clients, work place safety and visitors. Our solutions are customizable to fit the unique requirements of different commercial spaces, ensuring thorough cleaning and sanitization.",
         review1: "From day one, Blueline have shown a commitment to quality assurance and flexibility to meet our varied requirements. Couldn’t speak more highly of our experience",
         reviewer1: "Martin N.",
         reviewer1Position: "Schools Property Manager",
@@ -131,7 +132,7 @@ export const ServicesArray = [
     {
         id: 3,
         title: 'Industrial / Production Cleaning Service',
-        short: 'Full suite of cleaning services including comprehensive risk assessments as required and a strategic approach to preventative cleaning of your machines, equipment and facilities.',
+        short: 'Full suite of cleaning services in Tasmania including comprehensive risk assessments as required and a strategic approach to preventative cleaning of your machines, equipment and facilities.',
         url: 'industrial-production-cleaning-service',
         metaDescription: "Blueline’s Industrial Cleaning in Tasmania meets the rigorous demands of industrial environments. We ensure facilities are clean, safe, and compliant with specialized equipment and safety protocols.",
         image: Industrial,
@@ -413,7 +414,7 @@ export const ServicesArray = [
                 ]
             }
         ],
-        description: "Blueline’s School Cleaning services create safe and clean learning environments for students and staff. We accommodate the specific needs of schools, childcares, and educational institutions, ensuring high hygiene standards.",
+        description: "Blueline’s School Cleaning services in Tasmania create safe and clean learning environments for students and staff. We accommodate the specific needs of schools, childcares, and educational institutions, ensuring high hygiene standards.",
         review1: "From day one, Blueline have shown a commitment to quality assurance and flexibility to meet our varied requirements. Couldn’t speak more highly of our experience",
         reviewer1: "Martin",
         reviewer1Position: "Schools Property Manager",
@@ -505,5 +506,80 @@ export const ServicesArray = [
         review2: "It’s been a pleasure working with Blueline across our various office and facility network. They very quickly got up to speed and have proven a valubale asset to our overall businesses",
         reviewer2: "Sean",
         reviewer2Position: "Property and Fleet Manager",
-    }
+    },
+    {
+        id: 6,
+        title: 'Restaurant Cleaning Service',
+        short: 'We make sure your restaurant stays spotless and inviting by keeping the kitchen clean, sanitizing dining areas, and getting rid of germs that could affect the health of your team and guests. We’re here to help you serve the best of Tasmania with confidence.',
+        url: 'restaurant-cleaning-service',
+        metaDescription: "Ensure your Tasmanian restaurant stays clean and safe with Blueline Cleaning. Our team, including skilled individuals with disabilities, provides expert cleaning services to keep your kitchen and dining areas spotless for your staff and customers.",
+        image: Restaurant,
+        hero: Restaurant,
+        options: [
+            {
+                id: 1,
+                optionTitle: "Front of House Areas",
+                optionPrice: 45,
+                optionContent: [
+                    {
+                        descriptionId: 1,
+                        descriptionText: "Comprehensive cleaning of dining areas to ensure a welcoming atmosphere for your guests."
+                    },
+                    {
+                        descriptionId: 2,
+                        descriptionText: "Use of eco-friendly cleaning products to maintain a healthy environment."
+                    },
+                    {
+                        descriptionId: 3,
+                        descriptionText: "Special attention to high-touch areas like tables, chairs, and menus to prevent the spread of germs."
+                    },
+                ]
+            },
+            {
+                id: 2,
+                optionTitle: "Kitchen Cleaning",
+                optionPrice: 45,
+                optionContent: [
+                    {
+                        descriptionId: 1,
+                        descriptionText: "Thorough cleaning of kitchen surfaces, equipment, and floors to meet health and safety standards."
+                    },
+                    {
+                        descriptionId: 2,
+                        descriptionText: "Sanitizing of food preparation areas to ensure compliance with food safety regulations."
+                    },
+                    {
+                        descriptionId: 3,
+                        descriptionText: "Degreasing and cleaning of exhaust hoods, ovens, and grills as required."
+                    }
+                ]
+            },
+            {
+                id: 3,
+                optionTitle: "Deep Cleaning Service",
+                optionPrice: 45,
+                optionContent: [
+                    {
+                        descriptionId: 1,
+                        descriptionText: "Intensive deep cleaning of the entire restaurant, including hard-to-reach areas."
+                    },
+                    {
+                        descriptionId: 2,
+                        descriptionText: "Deep cleaning of carpets, upholstery, and floor waxing to enhance the restaurant’s appearance."
+                    },
+                    {
+                        descriptionId: 3,
+                        descriptionText: "Special projects such as window washing and detailed kitchen equipment cleaning."
+                    }
+                ]
+            }
+        ],
+        description: "Blueline’s Restaurant Cleaning services in Tasmania ensure your kitchen and dining areas are clean and safe for both staff and patrons. We tailor our services to meet the unique needs of restaurants, cafes, and food establishments, maintaining the highest standards of hygiene and cleanliness.",
+        review1: "From day one, Blueline have shown a commitment to quality assurance and flexibility to meet our varied requirements. Couldn’t speak more highly of our experience",
+        reviewer1: "Martin",
+        reviewer1Position: "Schools Property Manager",
+        review2: "It’s been a pleasure working with Blueline across our various office and facility network. They very quickly got up to speed and have proven a valubale asset to our overall businesses",
+        reviewer2: "Sean",
+        reviewer2Position: "Property and Fleet Manager",
+    },
 ]
