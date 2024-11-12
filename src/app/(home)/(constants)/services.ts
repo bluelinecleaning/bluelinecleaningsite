@@ -128,6 +128,38 @@ export const ServicesArray = [
         review2: "It’s been a pleasure working with Blueline across our various office and facility network. They very quickly got up to speed and have proven a valubale asset to our overall businesses",
         reviewer2: "Sean",
         reviewer2Position: "Property and Fleet Manager",
+        faqs: [
+            {
+                id: 1,
+                question: "What types of businesses do you serve for commercial cleaning?",
+                answer: "We serve a variety of industries, including offices, medical facilities, retail, schools, nursing homes, and more. Our team is trained for industry-specific needs."
+            },
+            {
+                id: 2,
+                question: "Are your cleaning products eco-friendly?",
+                answer: "Yes, we use environmentally-friendly products to ensure a safe environment for employees and clients. We take pride of our ISP 14001 - Environment Management System certificate"
+            },
+            {
+                id: 3,
+                question: "Do you offer after-hours or weekend cleaning",
+                answer: "Absolutely. We provide flexible scheduling to minimize disruption to your operations." 
+            },
+            {
+                id: 4,
+                question: "What is included in a standard commercial cleaning package?",
+                answer: "Standard services typically include dusting, vacuuming, disinfecting surfaces, trash removal, and restroom cleaning. Customizations are available."
+            },
+            {
+                id: 5,
+                question: "Can you provide specialized cleaning for medical or sensitive facilities?",
+                answer: "Yes, we adhere to strict cleaning protocols for sensitive environments like medical facilities to ensure compliance with health standards."
+            },
+            {
+                id: 6,
+                question: "How does pricing work for commercial cleaning services?",
+                answer: "Pricing depends on factors like facility size, cleaning frequency, and any specialized services. We provide a free quote to discuss your needs."
+            }
+        ]
     },
     {
         id: 3,
@@ -229,6 +261,38 @@ export const ServicesArray = [
         review2: "It’s been a pleasure working with Blueline across our various office and facility network. They very quickly got up to speed and have proven a valubale asset to our overall businesses",
         reviewer2: "Sean",
         reviewer2Position: "Property and Fleet Manager",
+        faqs: [
+            {
+                id: 1,
+                question: "What types of industrial facilities do you clean?",
+                answer: "We clean warehouses, factories, production plants, and other large-scale facilities requiring specialized cleaning methods and equipment."
+            },
+            {
+                id: 2,
+                question: "How does industrial cleaning differ from regular cleaning?",
+                answer: "Industrial cleaning involves handling larger spaces, heavy machinery, and stricter safety protocols to meet regulatory standards."
+            },
+            {
+                id: 3,
+                question: "Do you provide preventative maintenance cleaning?",
+                answer: "Yes, we offer customized maintenance plans to keep equipment in optimal condition and minimize downtime." 
+            },
+            {
+                id: 4,
+                question: "How frequently should industrial facilities be cleaned?",
+                answer: "Frequency depends on usage and production demands, but regular cleaning schedules are advised to ensure safety and efficiency."
+            },
+            {
+                id: 5,
+                question: "Can you provide deep cleaning for specific machinery?",
+                answer: "Yes, we offer deep cleaning for machinery, targeting areas prone to dust and grime buildup to enhance operational efficiency."
+            },
+            {
+                id: 6,
+                question: "Do you work around production schedules to avoid downtime?",
+                answer: "We offer flexible scheduling to minimize impact on production, including after-hours and weekend services."
+            }
+        ]
     },
     // {
     //     id: 2,
@@ -412,6 +476,25 @@ export const ServicesArray = [
                         descriptionText: "Steam cleaning of carpets and upholstery as required."
                     },
                 ]
+            },
+            {
+                id: 4,
+                optionTitle: "Emergency Cleaning Service",
+                optionPrice: 45,
+                optionContent: [
+                    {
+                        descriptionId: 1,
+                        descriptionText: "Specialized post-event cleaning service to ensure that your school is restored to a spotless, welcoming environment after any event."
+                    },
+                    {
+                        descriptionId: 2,
+                        descriptionText: "Emergency carpet restoration designed to respond quickly, removing water, drying and cleaning carpets, and restoring them to their original condition."
+                    },
+                    {
+                        descriptionId: 3,
+                        descriptionText: "Emergency outbreak cleaning to thoroughly disintect affected areas with hospital-grade disinfectants to eliminate harmful patogens and minimize the risk of further spread."
+                    }
+                ]
             }
         ],
         description: "Blueline’s School Cleaning services in Tasmania create safe and clean learning environments for students and staff. We accommodate the specific needs of schools, childcares, and educational institutions, ensuring high hygiene standards.",
@@ -421,6 +504,38 @@ export const ServicesArray = [
         review2: "It’s been a pleasure working with Blueline across our various office and facility network. They very quickly got up to speed and have proven a valubale asset to our overall businesses",
         reviewer2: "Sean",
         reviewer2Position: "Property and Fleet Manager",
+        faqs: [
+            {
+                id: 1,
+                question: "What types of educational facilities do you clean?",
+                answer: "We clean a range of educational spaces, including K-12 schools, child care centers, universities, and training facilities."
+            },
+            {
+                id: 2,
+                question: "How do you ensure a safe environment for children?",
+                answer: "We use non-toxic, child-safe cleaning products and focus on sanitizing high-touch areas to reduce germ spread."
+            },
+            {
+                id: 3,
+                question: "What additional services are available during school holidays?",
+                answer: "Our holiday cleaning includes deep cleaning, carpet steam cleaning, window washing, and floor waxing." 
+            },
+            {
+                id: 4,
+                question: "How frequently should schools be cleaned?",
+                answer: "Daily cleaning is recommended for high-traffic areas, with deeper cleans scheduled during breaks to maintain a healthy environment. We offer flexible and tailored cleaning plans for schools in Tasmania."
+            },
+            {
+                id: 5,
+                question: "Are your cleaning services compliant with safety standards?",
+                answer: "Yes, we adhere to ISO9001 and ISO14001 standards for quality and environmental safety."
+            },
+            {
+                id: 6,
+                question: "Do you provide emergency cleaning services?",
+                answer: "Yes, we offer emergency cleaning to address immediate needs, including post-event cleaning and sanitation after illness outbreaks. Our services also include steam cleaning for carpet restoration following floods, helping to quickly restore school facilities to safe conditions."
+            }
+        ]
     },
     {
         id: 5,
@@ -581,5 +696,37 @@ export const ServicesArray = [
         review2: "It’s been a pleasure working with Blueline across our various office and facility network. They very quickly got up to speed and have proven a valubale asset to our overall businesses",
         reviewer2: "Sean",
         reviewer2Position: "Property and Fleet Manager",
+        faqs: [
+            {
+                id: 1,
+                question: "What types of food establishments do you serve?",
+                answer: "We clean restaurants, cafes, bars, and other food establishments, ensuring all areas meet high hygiene standards."
+            },
+            {
+                id: 2,
+                question: "Do you provide after-hours cleaning to avoid disrupting service?",
+                answer: "Yes, we offer flexible scheduling, including after-hours cleaning, to avoid impacting your operations."
+            },
+            {
+                id: 3,
+                question: "What deep cleaning services do you offer for restaurants?",
+                answer: "Our deep cleaning includes kitchen degreasing, upholstery cleaning, floor waxing, and window washing to keep your space spotless." 
+            },
+            {
+                id: 4,
+                question: "Are your cleaning products safe for food areas?",
+                answer: "Absolutely. We use eco-friendly, food-safe products designed to maintain a healthy environment for guests and staff."
+            },
+            {
+                id: 5,
+                question: "Do you offer sanitation for high-contact areas like door handles and tables?",
+                answer: "Yes, we focus on sanitizing high-contact areas, such as door handles, tables, and chairs, to help prevent germ spread and keep your establishment safe for guests."
+            },
+            {
+                id: 6,
+                question: "How often should a restaurant be deep-cleaned?",
+                answer: "We recommend deep cleaning at least once a month for kitchens and dining areas, though high-traffic establishments may benefit from more frequent service. We can customize a plan to suit your needs."
+            }
+        ]
     },
 ]
