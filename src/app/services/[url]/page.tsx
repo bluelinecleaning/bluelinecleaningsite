@@ -12,6 +12,7 @@ import Reviews from './Reviews';
 import Reputation from './Reputation';
 import ServiceOptions from './ServiceOptions';
 import NotFound from '@/app/not-found';
+import Faqs from './Faqs';
 
 
 
@@ -116,6 +117,7 @@ export default function page({params}: { params: { url: string } }) {
                     <Reviews service={activeService} />
                     <Reputation />
                     <ServiceOptions service={activeService} />
+                    <Faqs service={activeService} />
                 </div>
             ) : (
                 <div>
