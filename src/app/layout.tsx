@@ -71,7 +71,7 @@ export default function RootLayout({
       </head>
       <GoogleAnalytics />
       <body className={`${inter.className} ${fira.variable}`}>
-      <script src="https://app.socialgrowthco.com/webchat/plugin.js?v=5"></script>
+      {/* <script src="https://app.socialgrowthco.com/webchat/plugin.js?v=5"></script> */}
         <script dangerouslySetInnerHTML={{
           __html: `
             (function() {
