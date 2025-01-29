@@ -537,91 +537,91 @@ export const ServicesArray = [
             }
         ]
     },
-    {
-        id: 5,
-        title: 'Laundry Services',
-        short: "Tasmanian's leading commercial laundry providing the highest standards in large volume for healthcare, aged care, hospitality industries and more.",
-        url: 'https://www.blueline-laundry.com/what-we-do',
-        metaDescription: "Blueline’s School Cleaning in Tasmania ensures safe, clean learning environments for students and staff. We meet the specific needs of schools and educational institutions with high hygiene standards.",
-        image: Laundry,
-        hero: School,
-        sticker: SchoolSticker,
-        card: Music,
-        options: [
-            {
-                id: 1,
-                optionTitle: "Child Care Centre Cleaning",
-                optionPrice: 45,
-                optionContent: [
-                    {
-                        descriptionId: 1,
-                        descriptionText: "Safe and hygienic cleaning practices tailored to childcare centres."
-                    },
-                    {
-                        descriptionId: 2,
-                        descriptionText: "Use of non-toxic, child-safe cleaning products to ensure a healthy environment for children."
-                    },
-                    {
-                        descriptionId: 3,
-                        descriptionText: "Focus on sanitizing toys, play areas, and sleeping areas to maintain a germ-free space."
-                    },
-                ]
-            },
-            {
-                id: 2,
-                optionTitle: "School Cleaning",
-                optionPrice: 45,
-                optionContent: [
-                    {
-                        descriptionId: 1,
-                        descriptionText: "Daily cleaning schedules to maintain cleanliness throughout the school day."
-                    },
-                    {
-                        descriptionId: 2,
-                        descriptionText: "Special attention to high-touch areas such as door handles, desks, and restrooms to prevent the spread of germs."
-                    },
-                    {
-                        descriptionId: 3,
-                        descriptionText: "Services include classroom cleaning, corridor maintenance, and sanitizing common areas like libraries and cafeterias."
-                    },
-                    {
-                        descriptionId: 4,
-                        descriptionText: "Steam cleaning of carpets and upholstery as required"
-                    },
-                ]
-            },
-            {
-                id: 3,
-                optionTitle: "School Holidays Cleaning",
-                optionPrice: 45,
-                optionContent: [
-                    {
-                        descriptionId: 1,
-                        descriptionText: "Intensive cleaning services during school holidays to prepare the school for the new term."
-                    },
-                    {
-                        descriptionId: 2,
-                        descriptionText: "Deep cleaning of classrooms, administrative offices, and common areas."
-                    },
-                    {
-                        descriptionId: 3,
-                        descriptionText: "Special projects such as carpet cleaning, window washing, and floor waxing to enhance the school’s appearance."
-                    },
-                    {
-                        descriptionId: 4,
-                        descriptionText: "Steam cleaning of carpets and upholstery as required."
-                    },
-                ]
-            }
-        ],
-        description: "Blueline’s School Cleaning services create safe and clean learning environments for students and staff. We accommodate the specific needs of schools, childcares, and educational institutions, ensuring high hygiene standards.",
-        review1: "From day one, Blueline have shown a commitment to quality assurance and flexibility to meet our varied requirements. Couldn’t speak more highly of our experience",
-        reviewer1: "Martin",
-        reviewer1Position: "Schools Property Manager",
-        review2: "It’s been a pleasure working with Blueline across our various office and facility network. They very quickly got up to speed and have proven a valubale asset to our overall businesses",
-        reviewer2: "Sean",
-        reviewer2Position: "Property and Fleet Manager",
-    },
+    // {
+    //     id: 5,
+    //     title: 'Laundry Services',
+    //     short: "Tasmanian's leading commercial laundry providing the highest standards in large volume for healthcare, aged care, hospitality industries and more.",
+    //     url: 'https://www.blueline-laundry.com/what-we-do',
+    //     metaDescription: "Blueline’s School Cleaning in Tasmania ensures safe, clean learning environments for students and staff. We meet the specific needs of schools and educational institutions with high hygiene standards.",
+    //     image: Laundry,
+    //     hero: School,
+    //     sticker: SchoolSticker,
+    //     card: Music,
+    //     options: [
+    //         {
+    //             id: 1,
+    //             optionTitle: "Child Care Centre Cleaning",
+    //             optionPrice: 45,
+    //             optionContent: [
+    //                 {
+    //                     descriptionId: 1,
+    //                     descriptionText: "Safe and hygienic cleaning practices tailored to childcare centres."
+    //                 },
+    //                 {
+    //                     descriptionId: 2,
+    //                     descriptionText: "Use of non-toxic, child-safe cleaning products to ensure a healthy environment for children."
+    //                 },
+    //                 {
+    //                     descriptionId: 3,
+    //                     descriptionText: "Focus on sanitizing toys, play areas, and sleeping areas to maintain a germ-free space."
+    //                 },
+    //             ]
+    //         },
+    //         {
+    //             id: 2,
+    //             optionTitle: "School Cleaning",
+    //             optionPrice: 45,
+    //             optionContent: [
+    //                 {
+    //                     descriptionId: 1,
+    //                     descriptionText: "Daily cleaning schedules to maintain cleanliness throughout the school day."
+    //                 },
+    //                 {
+    //                     descriptionId: 2,
+    //                     descriptionText: "Special attention to high-touch areas such as door handles, desks, and restrooms to prevent the spread of germs."
+    //                 },
+    //                 {
+    //                     descriptionId: 3,
+    //                     descriptionText: "Services include classroom cleaning, corridor maintenance, and sanitizing common areas like libraries and cafeterias."
+    //                 },
+    //                 {
+    //                     descriptionId: 4,
+    //                     descriptionText: "Steam cleaning of carpets and upholstery as required"
+    //                 },
+    //             ]
+    //         },
+    //         {
+    //             id: 3,
+    //             optionTitle: "School Holidays Cleaning",
+    //             optionPrice: 45,
+    //             optionContent: [
+    //                 {
+    //                     descriptionId: 1,
+    //                     descriptionText: "Intensive cleaning services during school holidays to prepare the school for the new term."
+    //                 },
+    //                 {
+    //                     descriptionId: 2,
+    //                     descriptionText: "Deep cleaning of classrooms, administrative offices, and common areas."
+    //                 },
+    //                 {
+    //                     descriptionId: 3,
+    //                     descriptionText: "Special projects such as carpet cleaning, window washing, and floor waxing to enhance the school’s appearance."
+    //                 },
+    //                 {
+    //                     descriptionId: 4,
+    //                     descriptionText: "Steam cleaning of carpets and upholstery as required."
+    //                 },
+    //             ]
+    //         }
+    //     ],
+    //     description: "Blueline’s School Cleaning services create safe and clean learning environments for students and staff. We accommodate the specific needs of schools, childcares, and educational institutions, ensuring high hygiene standards.",
+    //     review1: "From day one, Blueline have shown a commitment to quality assurance and flexibility to meet our varied requirements. Couldn’t speak more highly of our experience",
+    //     reviewer1: "Martin",
+    //     reviewer1Position: "Schools Property Manager",
+    //     review2: "It’s been a pleasure working with Blueline across our various office and facility network. They very quickly got up to speed and have proven a valubale asset to our overall businesses",
+    //     reviewer2: "Sean",
+    //     reviewer2Position: "Property and Fleet Manager",
+    // },
     {
         id: 6,
         title: 'Restaurant Cleaning Service',
