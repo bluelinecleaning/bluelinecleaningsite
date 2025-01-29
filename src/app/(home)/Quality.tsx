@@ -13,7 +13,7 @@ export default function Quality() {
             <p className='text-white narrative'>At Blueline, we prioritize quality and safety in every aspect of our operations. We ensure our services meet the highest benchmarks for quality and environmental management. We implement rigorous quality control measures and comprehensive safeguarding policies to protect our clients and employees.</p>
         </div>
 
-        <div className="md:mt-[2rem] flex gap-2 md:gap-4 justify-center pb-[1rem] md:pb-[3rem]  ">
+        {/* <div className="md:mt-[2rem] flex gap-2 md:gap-4 justify-center pb-[1rem] md:pb-[3rem]  ">
             <Image 
                 src={Iso1}
                 className='w-[4rem] md:w-[6rem] h-auto shadow-2xl'
@@ -26,7 +26,7 @@ export default function Quality() {
                 title='ISO 9001 certificate'
                 alt='ISO 9001 certificate'
             />
-        </div>
+        </div> */}
         
     </section>
   )
